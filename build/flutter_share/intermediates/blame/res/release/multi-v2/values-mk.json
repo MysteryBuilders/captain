@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/mohammedelshwehy/Downloads/captain/build/flutter_share/intermediates/incremental/mergeReleaseResources/merged.dir/values-mk/values-mk.xml",
+            "map": [
+                {
+                    "source": "/Users/mohammedelshwehy/.gradle/caches/transforms-2/files-2.1/aff7487e901e044f48e46661fdb6d5e4/core-1.3.2/res/values-mk/values-mk.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/mohammedelshwehy/Downloads/captain/build/flutter_share/intermediates/res/merged/release/values-mk/values-mk.xml",
+            "map": [
+                {
+                    "source": "/Users/mohammedelshwehy/.gradle/caches/transforms-2/files-2.1/aff7487e901e044f48e46661fdb6d5e4/core-1.3.2/res/values-mk/values-mk.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

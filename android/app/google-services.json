@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "798133584242",
+    "project_id": "captin-16ba7",
+    "storage_bucket": "captin-16ba7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798133584242:android:fa327abc307c6a2934ddeb",
+        "android_client_info": {
+          "package_name": "com.hawa4k.captain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "798133584242-j46putsm2gr0q9pfnvrla0jdsjc7t5e2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hawa4k.captain",
+            "certificate_hash": "40569f52d9e6c87939671e469e80266f61631584"
+          }
+        },
+        {
+          "client_id": "798133584242-b5n630iqa8sl0edarpqnpai3cu3u0d0o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs8MRMcVVv4nUCDs6gN3Vac-7oWOnyQIY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "798133584242-b5n630iqa8sl0edarpqnpai3cu3u0d0o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
