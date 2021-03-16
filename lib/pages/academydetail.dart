@@ -30,6 +30,7 @@ class _AcademyDetailState extends State<AcademyDetail> {
 int count = 1;
 SharedPref sharedPref = SharedPref();
 String mBaseImageUrl ="";
+bool isloggedIn = false;
 
 
 @override
@@ -38,7 +39,8 @@ void initState() {
   super.initState();
   getDefaultPathUrl().then((value){
     setState(() {
-      mBaseImageUrl = value;
+      mBaseImageUrl = value[KBaseImageUrl];
+      isloggedIn = value[kKeepMeLoggedIn];
     });
 
   });
@@ -46,8 +48,13 @@ void initState() {
 
 
 }
-Future<String> getDefaultPathUrl() async{
-return await sharedPref.readString(KBaseImageUrl);
+Future<Map> getDefaultPathUrl() async{
+  String imageUrl = await sharedPref.readString(KBaseImageUrl);
+  bool isLoggedIn = await sharedPref.readBool(kKeepMeLoggedIn);
+  Map map = Map();
+  map[KBaseImageUrl] = imageUrl;
+  map[kKeepMeLoggedIn] = isLoggedIn;
+return  map;
 }
   Widget build(BuildContext context) {
     return Scaffold(
@@ -135,8 +142,13 @@ return await sharedPref.readString(KBaseImageUrl);
               SizedBox(height: 12,),
               InkWell(
                 onTap: (){
-                  Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => OrderData(mAcademy: widget.mAcademy,count: count,)));
+                  if(isloggedIn){
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => OrderData(mAcademy: widget.mAcademy,count: count,)));
+                  }else{
+                    Navigator.pushNamedAndRemoveUntil(context,'/splash' ,(route) => false);
+                  }
+
                 },
                 child:
                 Container(

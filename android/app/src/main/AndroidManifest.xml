@@ -48,6 +48,7 @@
             android:hardwareAccelerated="true"
             android:launchMode="singleTop"
             android:theme="@style/LaunchTheme"
+            android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="adjustResize">
 
             <!--

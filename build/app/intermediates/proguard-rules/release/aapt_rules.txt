@@ -2,73 +2,73 @@
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
 # Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:59
 -keep class androidx.core.content.FileProvider { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:323
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:324
 -keep class androidx.lifecycle.ProcessLifecycleOwnerInitializer { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:171
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:172
 -keep class androidx.work.impl.WorkManagerInitializer { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:195
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:196
 -keep class androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:205
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:206
 -keep class androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:225
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:226
 -keep class androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:215
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:216
 -keep class androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:245
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:246
 -keep class androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:234
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:235
 -keep class androidx.work.impl.background.systemalarm.RescheduleReceiver { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:178
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:179
 -keep class androidx.work.impl.background.systemalarm.SystemAlarmService { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:183
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:184
 -keep class androidx.work.impl.background.systemjob.SystemJobService { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:190
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:191
 -keep class androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:329
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:330
 -keep class com.google.android.datatransport.runtime.backends.TransportBackendDiscovery { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:342
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:343
 -keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:336
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:337
 -keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:291
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:292
 -keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:306
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:307
 -keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:296
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:297
 -keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:302
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:303
 -keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:358
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:359
 -keep class com.google.android.play.core.assetpacks.AssetPackExtractionService { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:352
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:353
 -keep class com.google.android.play.core.common.PlayCoreDialogWrapperActivity { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:345
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:346
 -keep class com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:131
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:132
 -keep class com.google.firebase.components.ComponentDiscoveryService { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:282
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:283
 -keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:258
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:259
 -keep class com.google.firebase.messaging.FirebaseMessagingService { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:312
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:313
 -keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
 # Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:69
 -keep class com.hawa4k.captain.MainActivity { <init>(); }
 # Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:55
 -keep class com.hawa4k.captain.MapsActivity { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:124
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:125
 -keep class com.pichillilorenzo.flutter_inappwebview.ChromeCustomTabs.ActionBroadcastReceiver { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:119
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:120
 -keep class com.pichillilorenzo.flutter_inappwebview.ChromeCustomTabs.ChromeCustomTabsActivity { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:115
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:116
 -keep class com.pichillilorenzo.flutter_inappwebview.InAppBrowser.InAppBrowserActivity { <init>(); }
 # Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:36
 -keep class io.flutter.app.FlutterApplication { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:126
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:127
 -keep class io.flutter.plugins.firebasemessaging.FlutterFirebaseMessagingService { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:267
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:268
 -keep class io.flutter.plugins.imagepicker.ImagePickerFileProvider { <init>(); }
-# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:277
+# Referenced at /Users/mohammedelshwehy/Downloads/captain/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:278
 -keep class io.flutter.plugins.urllauncher.WebViewActivity { <init>(); }
 # Referenced at /Users/mohammedelshwehy/.gradle/caches/transforms-2/files-2.1/7a5a19094ce0a4c82d7726c62fee6e4e/appcompat-1.2.0/res/layout/abc_alert_dialog_title_material.xml:57
 # Referenced at /Users/mohammedelshwehy/.gradle/caches/transforms-2/files-2.1/7a5a19094ce0a4c82d7726c62fee6e4e/appcompat-1.2.0/res/layout/abc_alert_dialog_material.xml:52

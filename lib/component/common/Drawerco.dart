@@ -183,6 +183,18 @@ readProfile();
                                             ),
                                           ),
                                         ),
+                                        placeholder: (context, url) =>
+                                            Center(
+                                              child: SizedBox(
+                                                  height: 50.h,
+                                                  width: 50.h,
+                                                  child: new CircularProgressIndicator()),
+                                            ),
+
+                                        errorWidget: (context, url, error) => SizedBox(
+                                            height: 84.h,
+                                            width: 84.h,
+                                            child: Image.asset('images/user.png',fit: BoxFit.scaleDown,)),
 
                                       ),
                                     ),

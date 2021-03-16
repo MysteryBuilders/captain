@@ -168,152 +168,206 @@ ScreenUtil screenUtil = ScreenUtil();
 
 
       body:
-      Stack(
+      Column(
 
         children: [
-
-          ListView(
-            children: [
-              SizedBox(height: 90,),
-              Image.asset('images/logo.png',width: 116,height: 119,),
-              SizedBox(height: 20,),
-              Text(
-                'كن لاعباً بصفات القائد',
-                style: GoogleFonts.cairo(
-                  fontSize: 20.0,
-                  color: Colors.white,
-                  letterSpacing: -0.4,
-                  fontWeight: FontWeight.w600,
-                ),
-                textAlign: TextAlign.center,
-              ),
-              SizedBox(height: 40,),
-
-              Container(
-                child:
-                Stack(
-                  alignment: Alignment.bottomCenter,
+          Expanded(flex:1,child: Container()),
+          Expanded(flex: 3,
+              child:Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Column(
-                      //crossAxisAlignment: CrossAxisAlignment.center,
-                      verticalDirection: VerticalDirection.up,
-                      children: [
-                        SizedBox(height: 70,),
-                        Image.asset('images/lite.png'),
-                      ],
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      verticalDirection: VerticalDirection.up,
-                      children: [
-                        Image.asset('images/Luncherpsd.png',fit: BoxFit.none,),
+                    Image.asset('images/logo.png',height: 120.h,width: 116.h,),
 
-                      ],
-                    )
-                  ],
-                )
-                ,
-              ),
-            ],
-          ),
-          Positioned.directional(textDirection :  Directionality.of(context),
-            bottom: 0,
-            start: 0,
-            end: 0,
-            child: mIsLog == null?Container():
-            mIsLog == "0"?
-            Container(
-              height: 90,
-              child:  Column(
-                children: [
-                  Row(
-                    children: [
-                      Expanded(
-                        child:  Container(
-                          height: 43.0,
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              border: Border.all(width: 1,color: Colors.grey)
-                          ),
-                          child: InkWell(
-                            onTap: () {
-                              Navigator.pushNamed(context, '/login');
-                            },
-                            child: Text(
-                              'تسجيل الدخول',
-                              style: GoogleFonts.cairo(
-                                fontSize: 15.0,
-                                color: const Color(0xFF002087),
-                                letterSpacing: -0.3,
-                                fontWeight: FontWeight.w700,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                        ),
-                      ),
-
-                      Expanded(
-                        child:  Container(
-                          height: 43.0,
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              border: Border.all(width: 1,color: Colors.grey)
-                          ),
-                          child: InkWell(
-                            onTap: () {
-                              Navigator.pushNamed(context, '/register');
-                            },
-                            child: Text(
-                              'تسجيل العضوية',
-                              style: GoogleFonts.cairo(
-                                fontSize: 15.0,
-                                color: const Color(0xFF002087),
-                                letterSpacing: -0.3,
-                                fontWeight: FontWeight.w700,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  InkWell(
-                    onTap: () {
-
-                      Navigator.pushNamedAndRemoveUntil(context, Home.id, (route) => false);
-                    },
-                    child: Container(
-                      height: 43.0,
-                      color: const Color(0xFF002087),
-                      child:Text(
-                        'تسجيل العضوية لاحقا',
+                Text(
+                        'كن لاعباً بصفات القائد',
                         style: GoogleFonts.cairo(
-                          fontSize: 15.0,
+                          fontSize: 20.0,
                           color: Colors.white,
-                          letterSpacing: -0.3,
-                          fontWeight: FontWeight.w700,
+                          letterSpacing: -0.4,
+                          fontWeight: FontWeight.w600,
                         ),
                         textAlign: TextAlign.center,
-                      ) ,
-                    ),
-                  ),
+                      ),
+                    SizedBox(height: 10.h,),
+
+                  ],
+                ),
+              )
+          ),
+          Expanded(flex: 6,
+              child: Stack(
+                children: [
+                  Image.asset('images/lite.png'),
+                  Positioned.directional(
+                    textDirection:  Directionality.of(context),
+                    start: 0,
+                    end: 0,
+                    bottom: 0,
+                    child:Image.asset('images/Luncherpsd.png',fit: BoxFit.scaleDown,)
+                  )
+
+
                 ],
-              ),
-            ): login_model == null?
-            Container(
-              height: 90,
-              child: CircularProgressIndicator(),
-              alignment: FractionalOffset.center,
-            ): Container(
-              height: 90,
+              )),
+          Expanded( flex:2,
+              child:
+              mIsLog == null?Container():
+              mIsLog == "0"?
+              Container(
+                height: 90.h,
+                child:  Column(
+                  children: [
+                    Expanded(
+                      flex: 1,
+                      child: Row(
+                        children: [
+                          Expanded(
+                            flex: 1,
+                            child:  Container(
+                              padding: EdgeInsets.all(10.h),
 
-            )
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  border: Border.all(width: 1,color: Colors.grey)
+                              ),
+                              child: InkWell(
+                                onTap: () {
+                                  Navigator.pushNamed(context, '/login');
+                                },
+                                child: Text(
+                                  'تسجيل الدخول',
+                                  style: GoogleFonts.cairo(
+                                    fontSize: 15.0,
+                                    color: const Color(0xFF002087),
+                                    letterSpacing: -0.3,
+                                    fontWeight: FontWeight.w700,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                              ),
+                            ),
+                          ),
+
+                          Expanded(
+
+                            flex: 1,
+                            child:  Container(
+                              padding: EdgeInsets.all(10.h),
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  border: Border.all(width: 1,color: Colors.grey)
+                              ),
+                              child: InkWell(
+                                onTap: () {
+                                  Navigator.pushNamed(context, '/register');
+                                },
+                                child: Text(
+                                  'تسجيل العضوية',
+                                  style: GoogleFonts.cairo(
+                                    fontSize: 15.0,
+                                    color: const Color(0xFF002087),
+                                    letterSpacing: -0.3,
+                                    fontWeight: FontWeight.w700,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Expanded(
+                      flex: 1,
+                      child: InkWell(
+                        onTap: () {
+
+                          Navigator.pushNamedAndRemoveUntil(context, Home.id, (route) => false);
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(10.h),
+
+                          color: const Color(0xFF002087),
+                          child:Text(
+                            'تسجيل العضوية لاحقا',
+                            style: GoogleFonts.cairo(
+                              fontSize: 15.0,
+                              color: Colors.white,
+                              letterSpacing: -0.3,
+                              fontWeight: FontWeight.w700,
+                            ),
+                            textAlign: TextAlign.center,
+                          ) ,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ): login_model == null?
+              Container(
+                height: 90,
+                child: CircularProgressIndicator(),
+                alignment: FractionalOffset.center,
+              ): Container(
+                height: 90,
+
+              )
 
 
+          )
 
-            ,),
+
+          // ListView(
+          //   padding: EdgeInsets.zero,
+          //   physics: NeverScrollableScrollPhysics(),
+          //   children: [
+          //     SizedBox(height: 90,),
+          //     Image.asset('images/logo.png',width: 116,height: 119,),
+          //     SizedBox(height: 20,),
+          //     Text(
+          //       'كن لاعباً بصفات القائد',
+          //       style: GoogleFonts.cairo(
+          //         fontSize: 20.0,
+          //         color: Colors.white,
+          //         letterSpacing: -0.4,
+          //         fontWeight: FontWeight.w600,
+          //       ),
+          //       textAlign: TextAlign.center,
+          //     ),
+          //     SizedBox(height: 40,),
+          //
+          //     Container(
+          //       child:
+          //       Stack(
+          //         alignment: Alignment.bottomCenter,
+          //         children: [
+          //           Column(
+          //             //crossAxisAlignment: CrossAxisAlignment.center,
+          //             verticalDirection: VerticalDirection.up,
+          //             children: [
+          //               SizedBox(height: 70,),
+          //               Image.asset('images/lite.png'),
+          //             ],
+          //           ),
+          //           Column(
+          //             crossAxisAlignment: CrossAxisAlignment.center,
+          //             verticalDirection: VerticalDirection.up,
+          //             children: [
+          //               Container(
+          //                 height: 70.h,
+          //                   width: width,
+          //                   child: Image.asset('images/Luncherpsd.png',fit: BoxFit.scaleDown,)),
+          //
+          //             ],
+          //           )
+          //         ],
+          //       )
+          //       ,
+          //     ),
+          //   ],
+          // ),
         ],
       ),
 

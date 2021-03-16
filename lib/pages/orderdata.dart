@@ -60,14 +60,22 @@ class _OrderDataState extends State<OrderData> {
 
       if (pickedFile != null) {
 
+
         if(!parentImageSelected) {
+          print('pickedFile --> ${pickedFile.path} $index');
 
           _image = File(pickedFile.path);
-          Files[index] = _image;
-          print('file path -->${Files[index].path}');
+
+          files[index] = _image;
+
+
+          print('file path -->${files[index].path}');
         }else{
-          _parentImage = File(pickedFile.path);
-          parentImageSelected = false;
+
+            _parentImage = File(pickedFile.path);
+            parentImageSelected = false;
+
+
         }
       } else {
         print('No image selected.');
@@ -76,7 +84,7 @@ class _OrderDataState extends State<OrderData> {
   }
   List civilIds ;
   List names;
-  List<File> Files ;
+  List<File> files  ;
   List ages ;
   Future _getImageFromCamera(BuildContext context,int index) async {
     final pickedFile = await picker.getImage(source: ImageSource.camera);
@@ -85,11 +93,18 @@ class _OrderDataState extends State<OrderData> {
       if (pickedFile != null) {
         if(!parentImageSelected) {
           _image = File(pickedFile.path);
-          Files[index] = _image;
+          print('image --> ${pickedFile.path}');
+
+          files[index] = _image;
+
+
 
         }else{
-          _parentImage = File(pickedFile.path);
-          parentImageSelected = false;
+
+            _parentImage = File(pickedFile.path);
+            parentImageSelected = false;
+
+
 
         }
 
@@ -121,14 +136,18 @@ return nAlertDialog;
   void initState() {
     // TODO: implement initState
     super.initState();
+    setState(() {
+      civilIds = List(widget.count);
+      names = List(widget.count);
+      files  = List(widget.count);
+      ages = List(widget.count);
+
+    });
 
   }
   @override
   Widget build(BuildContext context) {
-     civilIds = List(widget.count);
-     names = List(widget.count);
-     Files  = List(widget.count);
-     ages = List(widget.count);
+
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
     return Scaffold(
@@ -636,9 +655,15 @@ return nAlertDialog;
     if(widget._globalKey.currentState.validate()){
 
         widget._globalKey.currentState.save();
+        print('names ==> ${names.length}');
+        print('civilIds ==> ${civilIds.length}');
+        print('ages ==> ${ages.length}');
+        print('files ==> ${files.length}');
         bool isvalid = true;
-        for(int i=0;i<Files.length;i++){
-          File file = Files[i];
+        print(files);
+        for(int i=0;i<files.length;i++){
+          print('is Valid ${files[i]}');
+          File file = files[i];
           if(file == null){
             isvalid = false;
             print('isvalid ${isvalid}');
@@ -659,14 +684,11 @@ return nAlertDialog;
 
           }else{
             modelHud.changeIsLoading(true);
-            print('names ==> ${names.length}');
-            print('civilIds ==> ${civilIds.length}');
-            print('ages ==> ${ages.length}');
-            print('files ==> ${Files.length}');
+
             List<ChildModel>  childrenList = List();
             for(int i =0;i<widget.count;i++){
-              print(Files[i].path);
-              ChildModel childModel = ChildModel(names[i], civilIds[i], Files[i], ages[i]);
+              print(files[i].path);
+              ChildModel childModel = ChildModel(names[i], civilIds[i], files[i], ages[i]);
               childrenList.add(childModel);
             }
             ParentModel parentModel = ParentModel(_parentName, _parentCivilId, _parentImage, _parentPhoneNumber, _parentBox, _parentRemarks);

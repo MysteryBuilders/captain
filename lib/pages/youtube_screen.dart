@@ -1,5 +1,6 @@
 import 'package:captain/component/gradient_appbar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 class YouTubeScreen extends StatefulWidget {
@@ -12,7 +13,7 @@ class YouTubeScreen extends StatefulWidget {
 
 class _YouTubeScreenState extends State<YouTubeScreen> {
 
-
+  YoutubePlayerController _controller;
 
 
 
@@ -21,7 +22,7 @@ class _YouTubeScreenState extends State<YouTubeScreen> {
     ScreenUtil screenUtil = ScreenUtil();
     String videoId;
     videoId = YoutubePlayer.convertUrlToId(widget.youtubeId);
-    YoutubePlayerController _controller = YoutubePlayerController(
+     _controller = YoutubePlayerController(
       flags: YoutubePlayerFlags(
         autoPlay: true,
         mute: true,
@@ -57,4 +58,13 @@ class _YouTubeScreenState extends State<YouTubeScreen> {
     );
 
   }
+  @override
+  void dispose() {
+    _controller.dispose();
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
+    super.dispose();
+  }
+
 }

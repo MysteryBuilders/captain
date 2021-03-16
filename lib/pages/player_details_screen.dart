@@ -29,6 +29,7 @@ class _PlayerDetailsScreenState extends State<PlayerDetailsScreen> {
   String mBaseImageUrl ='';
   bool playerInfoVisible = true;
   bool playerMediaVisible = false;
+  bool isloggedIn = false;
   @override
   void initState() {
     // TODO: implement initState
@@ -42,7 +43,8 @@ class _PlayerDetailsScreenState extends State<PlayerDetailsScreen> {
     getBaseImageUrl().then((value) {
 
       setState(() {
-        mBaseImageUrl = value;
+        mBaseImageUrl = value[KBaseImageUrl];
+        isloggedIn = value[kKeepMeLoggedIn];
 
       });
 
@@ -53,10 +55,14 @@ class _PlayerDetailsScreenState extends State<PlayerDetailsScreen> {
 
 
   }
-  Future<String> getBaseImageUrl() async{
+  Future<Map> getBaseImageUrl() async{
     SharedPref sharedPref = SharedPref();
-    mBaseImageUrl =await  sharedPref.readString(KBaseImageUrl);
-   return mBaseImageUrl;
+    String imageUrl = await sharedPref.readString(KBaseImageUrl);
+    bool isLoggedIn = await sharedPref.readBool(kKeepMeLoggedIn);
+    Map map = Map();
+    map[KBaseImageUrl] = imageUrl;
+    map[kKeepMeLoggedIn] = isLoggedIn;
+    return  map;
   }
 
   @override
@@ -193,7 +199,11 @@ margin: EdgeInsets.only(bottom: 4.h),
                           Expanded(child:
                           GestureDetector(
                             onTap: (){
-                              Navigator.of(context).push(MaterialPageRoute(builder: (context) => QuestionPlayerScreen(player:widget.player,mBaseImageUrl: mBaseImageUrl,)));
+                              if(isloggedIn){
+                                Navigator.of(context).push(MaterialPageRoute(builder: (context) => QuestionPlayerScreen(player:widget.player,mBaseImageUrl: mBaseImageUrl,)));
+                              }else{
+                                Navigator.pushNamedAndRemoveUntil(context,'/splash' ,(route) => false);
+                              }
 
                             },
                             child: Container(
@@ -604,7 +614,7 @@ margin: EdgeInsets.only(bottom: 4.h),
                                                 child: Text(widget.player.championships[index].year.toString(),
                                                   style: TextStyle(
                                                       color: Color(0xFF000000),
-                                                      fontSize: screenUtil.setSp(16,allowFontScalingSelf: true),
+                                                      fontSize: screenUtil.setSp(13,allowFontScalingSelf: true),
                                                       fontWeight: FontWeight.w600
                                                   ),),
                                               ),
@@ -613,7 +623,7 @@ margin: EdgeInsets.only(bottom: 4.h),
                                                 child: Text(widget.player.championships[index].nameClub.toString(),
                                                   style: TextStyle(
                                                       color: Color(0xFF000000),
-                                                      fontSize: screenUtil.setSp(16,allowFontScalingSelf: true),
+                                                      fontSize: screenUtil.setSp(13,allowFontScalingSelf: true),
                                                       fontWeight: FontWeight.w600
                                                   ),),
                                               ),
@@ -627,24 +637,24 @@ margin: EdgeInsets.only(bottom: 4.h),
                                                 Text(widget.player.championships[index].goal.toString(),
                                                   style: TextStyle(
                                                       color: Color(0xFF000000),
-                                                      fontSize: screenUtil.setSp(16,allowFontScalingSelf: true),
+                                                      fontSize: screenUtil.setSp(13,allowFontScalingSelf: true),
                                                       fontWeight: FontWeight.w600
                                                   ),),
                                                 Text(widget.player.championships[index].goal.toString(),
                                                   style: TextStyle(
                                                       color: Color(0xFF000000),
-                                                      fontSize: screenUtil.setSp(16,allowFontScalingSelf: true),
+                                                      fontSize: screenUtil.setSp(13,allowFontScalingSelf: true),
                                                       fontWeight: FontWeight.w600
                                                   ),),
                                                 Text(widget.player.championships[index].yellowCard.toString(),
                                                   style: TextStyle(
                                                       color: Color(0xFF000000),
-                                                      fontSize: screenUtil.setSp(16,allowFontScalingSelf: true),
+                                                      fontSize: screenUtil.setSp(13,allowFontScalingSelf: true),
                                                       fontWeight: FontWeight.w600
                                                   ),),Text(widget.player.championships[index].redCard.toString(),
                                                   style: TextStyle(
                                                       color: Color(0xFF000000),
-                                                      fontSize: screenUtil.setSp(16,allowFontScalingSelf: true),
+                                                      fontSize: screenUtil.setSp(13,allowFontScalingSelf: true),
                                                       fontWeight: FontWeight.w600
                                                   ),),
                                               ],

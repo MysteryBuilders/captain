@@ -41,7 +41,7 @@ class _AcademyComponentState extends State<AcademyComponent> {
                     //     builder: (context) => AcademyDetail(academy_id: '${i.id}',)));
                   },
                   child:  Container(
-                    height:200,
+                    height:220,
                     margin: EdgeInsets.symmetric(horizontal: 8),
                     decoration: BoxDecoration(
                       boxShadow: [
