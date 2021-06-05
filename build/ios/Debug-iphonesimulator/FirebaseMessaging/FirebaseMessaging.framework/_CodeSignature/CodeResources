@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/FIRMessaging.h</key>
 		<data>
-		JsiF8Hr2qOtjz0Zvw5zuUrSF1Jo=
+		OsN0+pYdlc7jpuGt3jsO+muxTG4=
 		</data>
 		<key>Headers/FIRMessagingExtensionHelper.h</key>
 		<data>
-		gU90A6pu7f6zDONLZlJT7KSIe48=
+		cYSluS+JMCzqcUONoD5zvfBlyoU=
 		</data>
 		<key>Headers/FirebaseMessaging-umbrella.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Headers/FirebaseMessaging.h</key>
 		<data>
-		df5ghQmKccAGQU6r4RaNF0fx7YY=
+		nlzjtwMlY6Z1ig0tSzU7KrXTLug=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mITGqRgU8eCEd4azn0u0Kxn6dqE=
+		aD5a8uEmhbSxlRCU9hOHEJsdY6Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,22 +35,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JsiF8Hr2qOtjz0Zvw5zuUrSF1Jo=
+			OsN0+pYdlc7jpuGt3jsO+muxTG4=
 			</data>
 			<key>hash2</key>
 			<data>
-			wFFG45jQg7NY6mMXofNzH78l0jVyeKlKVbHkYMSfl3s=
+			q7yy8Xor7l1+ePg0bjsAr6aeywiyPNU+OsYxOm++Bb8=
 			</data>
 		</dict>
 		<key>Headers/FIRMessagingExtensionHelper.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gU90A6pu7f6zDONLZlJT7KSIe48=
+			cYSluS+JMCzqcUONoD5zvfBlyoU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ChemYsUX/qzuDCgVcWM5KaAg5SKDuwaev3kUvR+zRtQ=
+			xEuT23RK1xl19nTf34hv3ZSFtPtP8fZv4dexSGcq6tY=
 			</data>
 		</dict>
 		<key>Headers/FirebaseMessaging-umbrella.h</key>
@@ -68,11 +68,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			df5ghQmKccAGQU6r4RaNF0fx7YY=
+			nlzjtwMlY6Z1ig0tSzU7KrXTLug=
 			</data>
 			<key>hash2</key>
 			<data>
-			wl0mF/DqC4BTbcBpuGmOtBM3w1f2f98vdXTjBbHJ0HI=
+			Yx5eG5zbsxtKV0DY9S/JCqEs1FxSP2o4gRjZSVUjiu0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

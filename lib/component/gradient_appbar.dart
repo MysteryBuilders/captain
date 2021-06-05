@@ -42,7 +42,7 @@ class GradientAppBar extends StatelessWidget {
               child: Text(
                 title,
                 style: GoogleFonts.cairo(
-                  fontSize: screenUtil.setSp(16,allowFontScalingSelf: true),
+                  fontSize: screenUtil.setSp(16),
                   color: Colors.white,
                   letterSpacing: -0.36,
                   fontWeight: FontWeight.w700,

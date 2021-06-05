@@ -267,39 +267,39 @@ readProfile();
                         ),
                       ),
 
-                      InkWell(
-                        onTap: () {
-                          Navigator.pushNamed(context, PlayerScreen.id);
-                        },
-                        child:
-                        SizedBox(
-                          height: 40.0,
-                          child: Row(
-                            children: <Widget>[
-                              SizedBox(width: 50,),
-                              Container(
-                                alignment: Alignment(0.24, 0.0),
-                                width: 30.0,
-                                height: 30.0,
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  color: const Color(0xFFF2C046),
-                                ),
-                                child: Icon(FontAwesomeIcons.userEdit,color: Colors.white,size: 15,),
-                              ),
-                              SizedBox(width: 10,),
-                              Text(
-                                'الملفات الشخصية للاعبين',
-                                style: GoogleFonts.cairo(
-                                  fontSize: 18.0,
-                                  color: const Color(0xFFF2C046),
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
+                      // InkWell(
+                      //   onTap: () {
+                      //     Navigator.pushNamed(context, PlayerScreen.id);
+                      //   },
+                      //   child:
+                      //   SizedBox(
+                      //     height: 40.0,
+                      //     child: Row(
+                      //       children: <Widget>[
+                      //         SizedBox(width: 50,),
+                      //         Container(
+                      //           alignment: Alignment(0.24, 0.0),
+                      //           width: 30.0,
+                      //           height: 30.0,
+                      //           decoration: BoxDecoration(
+                      //             shape: BoxShape.circle,
+                      //             color: const Color(0xFFF2C046),
+                      //           ),
+                      //           child: Icon(FontAwesomeIcons.userEdit,color: Colors.white,size: 15,),
+                      //         ),
+                      //         SizedBox(width: 10,),
+                      //         Text(
+                      //           'الملفات الشخصية للاعبين',
+                      //           style: GoogleFonts.cairo(
+                      //             fontSize: 18.0,
+                      //             color: const Color(0xFFF2C046),
+                      //             fontWeight: FontWeight.w600,
+                      //           ),
+                      //         ),
+                      //       ],
+                      //     ),
+                      //   ),
+                      // ),
 
                       Container(
                         child: isLogIn?

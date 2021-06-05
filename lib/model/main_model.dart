@@ -970,6 +970,7 @@ class Settings {
   String _aboutUs;
   dynamic _createdAt;
   String _updatedAt;
+  int _brothersPercentage;
 
   int get id => _id;
   String get logo => _logo;
@@ -982,6 +983,7 @@ class Settings {
   String get aboutUs => _aboutUs;
   dynamic get createdAt => _createdAt;
   String get updatedAt => _updatedAt;
+  int get brothersPercentage =>_brothersPercentage;
 
   Settings({
       int id, 
@@ -993,7 +995,8 @@ class Settings {
       String email, 
       String phone, 
       String aboutUs, 
-      dynamic createdAt, 
+      dynamic createdAt,
+    int brothersPercentage,
       String updatedAt}){
     _id = id;
     _logo = logo;
@@ -1006,6 +1009,7 @@ class Settings {
     _aboutUs = aboutUs;
     _createdAt = createdAt;
     _updatedAt = updatedAt;
+    _brothersPercentage = brothersPercentage;
 }
 
   Settings.fromJson(dynamic json) {
@@ -1020,6 +1024,7 @@ class Settings {
     _aboutUs = json["about_us"];
     _createdAt = json["created_at"];
     _updatedAt = json["updated_at"];
+    _brothersPercentage = json["brothers_percentage"];
   }
 
   Map<String, dynamic> toJson() {
@@ -1035,6 +1040,7 @@ class Settings {
     map["about_us"] = _aboutUs;
     map["created_at"] = _createdAt;
     map["updated_at"] = _updatedAt;
+    map['brothers_percentage']= _brothersPercentage;
     return map;
   }
 

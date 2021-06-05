@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "IdleTimerDisabledObserver.h"
 #import "messages.h"
 #import "WakelockPlugin.h"
 

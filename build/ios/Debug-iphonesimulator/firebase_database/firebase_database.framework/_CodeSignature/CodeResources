@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/FLTFirebaseDatabasePlugin.h</key>
 		<data>
-		9fmOnR6LCuVvesbMOpuJd28a8iE=
+		oShrMx0m+5We/TbH7M6VOB2mD4w=
 		</data>
 		<key>Headers/firebase_database-umbrella.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		B9WE3rHwywZ6ggyaJ/diTluCaVY=
+		/26ps8kzegXBBzzCrTYNNdYUJI0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -27,11 +27,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9fmOnR6LCuVvesbMOpuJd28a8iE=
+			oShrMx0m+5We/TbH7M6VOB2mD4w=
 			</data>
 			<key>hash2</key>
 			<data>
-			kwQtCg1oDCSZjPqZHDuhf7crwqcralKK8ySrBmd6gs4=
+			zLFSRcPeTp4z9ZPc0U6asWOfnidHh9RjVwtCMV4LNVQ=
 			</data>
 		</dict>
 		<key>Headers/firebase_database-umbrella.h</key>

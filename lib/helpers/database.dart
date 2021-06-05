@@ -16,7 +16,7 @@ class DataBase{
 
   loginData(String email , String password) async{
     String myUrl = "${urlstatename()}api/login";
-    final response = await  http.post(myUrl,
+    final response = await  http.post(Uri.parse(myUrl),
         headers: {
           'Accept':'application/json'
         },
@@ -37,7 +37,7 @@ class DataBase{
 
   forgot(String email) async{
     String myUrl = "${urlstatename()}/resetpassword";
-    final response = await  http.post(myUrl,
+    final response = await  http.post(Uri.parse(myUrl),
         headers: {
           'Accept':'application/json'
         },
@@ -61,7 +61,7 @@ class DataBase{
   registerData(String name ,String email , String password, String password_confirmation, String phone) async{
 
     String myUrl = "${urlstatename()}/register";
-    final response = await  http.post(myUrl,
+    final response = await  http.post(Uri.parse(myUrl),
         headers: {
           'Accept':'application/json'
         },
@@ -88,7 +88,7 @@ class DataBase{
     final value = prefs.get('token') ?? 0;
 
     String myUrl = "${urlstatename()}api/add_order?token="+value;
-    final response = await  http.post(myUrl,
+    final response = await  http.post(Uri.parse(myUrl),
         headers: {
           'Accept':'application/json',
         },
@@ -120,7 +120,7 @@ class DataBase{
     final value = prefs.get('token') ?? 0;
 
     String myUrl = "${urlstatename()}/auth/update";
-    final response = await  http.post(myUrl,
+    final response = await  http.post(Uri.parse(myUrl),
         headers: {
           'Accept':'application/json',
           "Authorization": "Bearer " +value,
@@ -153,7 +153,7 @@ class DataBase{
     final value = prefs.get('token') ?? 0;
 
     String myUrl = "${urlstatename()}/customer_add";
-    final response = await  http.post(myUrl,
+    final response = await  http.post(Uri.parse(myUrl),
         headers: {
           'Accept':'application/json',
           "Authorization": "Bearer " +value,

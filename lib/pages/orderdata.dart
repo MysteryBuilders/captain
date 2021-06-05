@@ -18,6 +18,7 @@ import 'package:captain/pages/payment_screen.dart';
 import 'package:captain/provider/model_hud.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_switch/flutter_switch.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
@@ -85,7 +86,9 @@ class _OrderDataState extends State<OrderData> {
   List civilIds ;
   List names;
   List<File> files  ;
+  List<int> counts ;
   List ages ;
+  List<bool> status;
   Future _getImageFromCamera(BuildContext context,int index) async {
     final pickedFile = await picker.getImage(source: ImageSource.camera);
     Navigator.pop(context);
@@ -136,11 +139,18 @@ return nAlertDialog;
   void initState() {
     // TODO: implement initState
     super.initState();
+
     setState(() {
       civilIds = List(widget.count);
       names = List(widget.count);
       files  = List(widget.count);
       ages = List(widget.count);
+      counts = List(widget.count);
+      status = List(widget.count);
+      for(int i =0;i<counts.length;i++){
+        counts[i]= 1;
+        status[i]= false;
+      }
 
     });
 
@@ -164,7 +174,7 @@ return nAlertDialog;
             'بيانات الطلب',
 
            style: GoogleFonts.cairo(
-              fontSize: screenUtil.setSp(18, allowFontScalingSelf: true),
+              fontSize: screenUtil.setSp(18),
               color: const Color(0xFF002087),
               letterSpacing: -0.36,
               fontWeight: FontWeight.w700,
@@ -206,7 +216,7 @@ return nAlertDialog;
 
                   Container(
                   margin: EdgeInsets.all(10.w),
-                  height: 220.h,
+                  height: 320.h,
                   width: width,
                   child:
 
@@ -235,7 +245,7 @@ return nAlertDialog;
                                         'بيانات اللاعب',
                                         style: TextStyle(
                                           color: Color(0xFFFFFFFF),
-                                          fontSize: screenUtil.setSp(14,allowFontScalingSelf: true),
+                                          fontSize: screenUtil.setSp(14),
                                           fontWeight: FontWeight.normal
                                         ),
                                       ),
@@ -290,6 +300,127 @@ return nAlertDialog;
                                     },
                                     ),
                                   )),
+                              Expanded(
+                                  flex:1,
+                                  child:   Container(
+                                    margin:
+
+                                    EdgeInsets.only(bottom: 4.h,right: 40.w,left: 40.h),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: <Widget>[
+                                        Text(
+                                          'اختر عدد الملابس',
+                                          style: GoogleFonts.cairo(
+                                            fontSize: 17.0,
+                                            color: Color(0xFF002087),
+                                            letterSpacing: -0.34,
+                                            fontWeight: FontWeight.w700,
+                                            height: 1.35,
+                                          ),
+                                          textAlign: TextAlign.right,
+                                        ),
+                                        InkWell(
+                                          onTap: (){
+                                            int count = counts[index];
+                                            if(count>1){
+                                              count--;
+                                              counts[index]= count;
+                                              setState(() {
+
+                                              });
+                                            }
+
+                                          },
+                                          child:  Container(
+                                              alignment: Alignment.center,
+                                              width: 26.0,
+                                              height: 26.0,
+                                              decoration: BoxDecoration(
+                                                shape: BoxShape.circle,
+                                                color: Colors.white,
+                                              ),
+                                              child: Icon(Icons.remove,color: const Color(0xFF002087),size: 18,)
+                                          ),
+                                        ),
+
+                                        Text(
+                                          '${counts[index]}',
+                                          style: GoogleFonts.cairo(
+                                            fontSize: 20.0,
+                                            color: Colors.white,
+                                            letterSpacing: -0.4,
+                                            fontWeight: FontWeight.w700,
+                                            height: 1.15,
+                                          ),
+                                          textAlign: TextAlign.right,
+                                        ),
+                                        InkWell(
+                                          onTap: (){
+                                            setState(() {
+                                              int count = counts[index];
+                                              count++;
+                                              counts[index]= count;
+
+                                            });
+                                          },
+                                          child: Container(
+                                              alignment: Alignment.center,
+                                              width: 26.0,
+                                              height: 26.0,
+                                              decoration: BoxDecoration(
+                                                shape: BoxShape.circle,
+                                                color: Colors.white,
+                                              ),
+                                              child: Icon(Icons.add,color: const Color(0xFF002087),size: 18,)
+                                          ),
+                                        ),
+
+                                      ],
+                                    ),
+                                  ),),
+                              Expanded(child:
+                              Container(
+                                margin:
+
+                                EdgeInsets.only(bottom: 4.h,right: 40.w,left: 40.h),
+
+                                child:
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                        'اشقاء',
+                                        style: TextStyle(
+                                            color: Color(0xFF002087),
+                                            fontSize: screenUtil.setSp(16),
+                                            fontWeight: FontWeight.bold
+
+                                        )),
+                                    FlutterSwitch(
+                                      activeColor: Color(0xFF002087),
+                                      inactiveColor: Colors.grey,
+                                      width: 80.0.w,
+                                      height: 30.0.h,
+                                      valueFontSize: 25.0,
+                                      toggleSize: 45.0,
+                                      value: status[index],
+                                      borderRadius: 30.0,
+                                      padding: 8.0,
+                                      showOnOff: false,
+                                      onToggle: (val)  {
+                                        bool statusIndex = status[index];
+                                        status[index]= !statusIndex;
+                                        setState(() {
+
+                                        });
+
+                                      },
+                                    ),
+
+                                  ],
+                                ),
+                              )),
                               Expanded(flex: 1,
                                   child:
 
@@ -333,7 +464,7 @@ return nAlertDialog;
                                             style: TextStyle(
                                               color:Color(0xFFF2C046),
                                               fontWeight: FontWeight.w500,
-                                              fontSize: screenUtil.setSp(14,allowFontScalingSelf: true)
+                                              fontSize: screenUtil.setSp(14)
                                             ),
                                           ),
                                         ),
@@ -414,7 +545,7 @@ return nAlertDialog;
                                   'ولي الأمر',
                                   style: TextStyle(
                                       color: Color(0xFFFFFFFF),
-                                      fontSize: screenUtil.setSp(14,allowFontScalingSelf: true),
+                                      fontSize: screenUtil.setSp(14),
                                       fontWeight: FontWeight.normal
                                   ),
                                 ),
@@ -470,22 +601,22 @@ return nAlertDialog;
                               },
                               ),
                             )),
-                        Expanded(flex: 1,
-                            child:  Container(
-
-
-                              margin:
-
-                              EdgeInsets.only(bottom: 4.h,right: 40.w,left: 40.h),
-                              child:
-
-
-                              BoxNumberTextField(hint:" رقم الصندوق",onClick: (value){
-                                _parentBox= value;
-
-                              },
-                              ),
-                            )),
+                        // Expanded(flex: 1,
+                        //     child:  Container(
+                        //
+                        //
+                        //       margin:
+                        //
+                        //       EdgeInsets.only(bottom: 4.h,right: 40.w,left: 40.h),
+                        //       child:
+                        //
+                        //
+                        //       BoxNumberTextField(hint:" رقم الصندوق",onClick: (value){
+                        //         _parentBox= value;
+                        //
+                        //       },
+                        //       ),
+                        //     )),
                         Expanded(flex: 2,
                             child:  Container(
 
@@ -566,7 +697,7 @@ return nAlertDialog;
                                             style: TextStyle(
                                                 color:Color(0xFFF2C046),
                                                 fontWeight: FontWeight.w500,
-                                                fontSize: screenUtil.setSp(14,allowFontScalingSelf: true)
+                                                fontSize: screenUtil.setSp(14)
                                             ),
                                           ),
                                         ),
@@ -633,7 +764,7 @@ return nAlertDialog;
                    'التوجه للدفع'
                     ,style: TextStyle(
                     color: Color(0xFF002087),
-                    fontSize: screenUtil.setSp(14,allowFontScalingSelf: true),
+                    fontSize: screenUtil.setSp(14),
                     fontWeight: FontWeight.normal,
 
                   ),
@@ -688,12 +819,13 @@ return nAlertDialog;
             List<ChildModel>  childrenList = List();
             for(int i =0;i<widget.count;i++){
               print(files[i].path);
-              ChildModel childModel = ChildModel(names[i], civilIds[i], files[i], ages[i]);
+              ChildModel childModel = ChildModel(names[i], civilIds[i], files[i], ages[i],counts[i],status[i]);
               childrenList.add(childModel);
             }
             ParentModel parentModel = ParentModel(_parentName, _parentCivilId, _parentImage, _parentPhoneNumber, _parentBox, _parentRemarks);
             CaptinService captinService = CaptinService();
            dynamic  response = await captinService.sumbitOrder(widget.mAcademy.id.toString(), widget.count.toString(), childrenList, parentModel);
+           print('resp --> ${response}');
             bool success = response['success'];
             modelHud.changeIsLoading(false);
             if(success){

@@ -52,7 +52,7 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
                       child: Text(
                         'من نحن',
                         style: GoogleFonts.cairo(
-                          fontSize: screenUtil.setSp(16,allowFontScalingSelf: true),
+                          fontSize: screenUtil.setSp(16),
                           color: Colors.white,
                           letterSpacing: -0.36,
                           fontWeight: FontWeight.w700,
@@ -91,7 +91,7 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
                                 child: Text('Captain 23',style:
                                   TextStyle(
                                     color: Color(0xFF002087),
-                                    fontSize: screenUtil.setSp(20,allowFontScalingSelf: true),
+                                    fontSize: screenUtil.setSp(20),
                                     fontWeight: FontWeight.bold
                                   ),),
                               )
@@ -114,7 +114,7 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
                                 textStyle: TextStyle(
                                     color: Color(0xFF000000),
                                     fontWeight: FontWeight.w600,
-                                    fontSize: screenUtil.setSp(15, allowFontScalingSelf: true)
+                                    fontSize: screenUtil.setSp(15)
 
                                 ),
                               ),

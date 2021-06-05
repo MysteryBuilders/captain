@@ -167,7 +167,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                                   child: Text(notificationList[index].msg,
                                     style: TextStyle(
                                         fontWeight: FontWeight.w600,
-                                        fontSize: screenUtil.setSp(16,allowFontScalingSelf: true),
+                                        fontSize: screenUtil.setSp(16),
                                         color: Color(0xFF717171)
                                     ),
 

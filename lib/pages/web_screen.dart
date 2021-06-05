@@ -49,24 +49,24 @@ class _WebSiteScreenState extends State<WebSiteScreen> {
               //   },
               // ),
               InAppWebView(
-                initialUrl: widget.url,
-                initialHeaders: {},
+                initialUrlRequest: URLRequest(url: Uri.parse(widget.url)),
+
                 initialOptions: InAppWebViewGroupOptions(
                   crossPlatform: InAppWebViewOptions(
-                      debuggingEnabled: true,
+
                       userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:61.0) Gecko/20100101 Firefox/61.0"
                   ),
                 ),
                 onWebViewCreated: (InAppWebViewController controller) {
                   webView = controller;
                 },
-                onLoadStart: (InAppWebViewController controller, String url) {
+                onLoadStart: (InAppWebViewController controller, Uri url) {
                   isLoading = false;
                 },
-                onLoadStop: (InAppWebViewController controller, String url) async {
+                onLoadStop: (InAppWebViewController controller, Uri url) async {
                   isLoading = true;
                   print(url);
-                  if (url.contains('')) {
+                  if (url.toString().contains('')) {
 
 
                   }

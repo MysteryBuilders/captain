@@ -13,14 +13,16 @@ import 'package:captain/helpers/shared_prefs.dart';
 import 'package:captain/model/login_model.dart';
 import 'package:captain/model/main_model.dart';
 import 'package:captain/pages/academies_screen.dart';
+import 'package:captain/pages/academydetail.dart';
 import 'package:captain/pages/players_screen.dart';
 import 'package:captain/provider/AcademyProvider.dart';
 import 'package:captain/provider/CoachProvider.dart';
 import 'package:captain/provider/PlaygroundProvider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gradient_app_bar/gradient_app_bar.dart';
+
 import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:convert';
@@ -136,6 +138,7 @@ print(isLogin);
 
 
   }
+  ScreenUtil screenUtil = ScreenUtil();
 
   @override
 
@@ -151,7 +154,7 @@ print(isLogin);
         Drawerc(settings: mainModel.payload.settings,imageUrl: imageBaseUrl,aboutUs: mainModel.payload.settings.aboutUs,cities: mainModel.payload.cities,)
 
       ),
-      appBar: GradientAppBar(
+      appBar: AppBar(
         title: Text(
           'الرئيسية',
           style: GoogleFonts.cairo(
@@ -162,8 +165,7 @@ print(isLogin);
           ),
           textAlign: TextAlign.center,
         ),
-        gradient: LinearGradient(colors: [const Color(0xFFF2C046),const Color(0xFFE4AF3D),const Color(0xFFC78B2B)],begin: Alignment.bottomRight,
-          end: Alignment.topLeft,),
+
         centerTitle: true,
         leading:  InkWell(
           onTap: () => _drawerKey.currentState.openDrawer(),
@@ -291,74 +293,184 @@ print(isLogin);
               )
             ],
           ),
+          ListView.separated(
+              scrollDirection: Axis.vertical,
 
-          AcademyComponent(imageUrl: imageBaseUrl,academies: mainModel.payload.academies,),
+
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+
+              itemBuilder: (context,index){
+                return
+
+                  InkWell(
+                    onTap: (){
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => AcademyDetail(mAcademy: mainModel.payload.academies[index],)));
+
+                    },
+                    child: Container(
+
+                    width: screenUtil.screenWidth,
+                    child: Container(
+                      height:220,
+                      margin: EdgeInsets.symmetric(horizontal: 8),
+                      decoration: BoxDecoration(
+                        boxShadow: [
+                          new BoxShadow(
+                            color:  const Color(0xFFE3E3E3).withOpacity(.90),
+                            blurRadius: 15.0,
+                          ),
+                        ],
+                      ),
+                      child: new Card(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: EdgeInsets.all(6),
+                                child:Container(
+                                    height: 127,
+                                    width: screenUtil.screenWidth,
+                                    child:Image.network('${imageBaseUrl}${mainModel.payload.academies[index].img}',fit: BoxFit.cover,)
+                                ),
+                              ),
+                              Padding(
+                                  padding: EdgeInsets.only(right: 9),
+                                  child:Text(
+                                    '${mainModel.payload.academies[index].name}',
+                                    style: GoogleFonts.cairo(
+                                      fontSize: 18.0,
+                                      color: const Color(0xFF002087),
+                                    ),
+                                  )
+                              ),
+                              Row(
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsets.only(right: 9),
+                                    child:
+                                    Text(
+                                      ' ${mainModel.payload.academies[index].price} د.ك',
+                                      style: GoogleFonts.cairo(
+                                        fontSize: 16.0,
+                                        color: const Color(0xFF717171),
+                                      ),
+                                      textAlign: TextAlign.right,
+                                    ),
+                                  ),
+                                  Expanded(child:
+                                  SizedBox(width: 30,),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsets.only(left: 9),
+                                    child:Container(
+                                      width: 50.0,
+                                      height: 24.0,
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(1.0),
+                                        color: const Color(0xFFF2C046),
+                                      ),
+                                      child: Row(
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            '4.5',
+                                            style: GoogleFonts.cairo(
+                                              fontSize: 14.0,
+                                              color: Colors.black,
+                                            ),
+                                          ),
+                                          Icon(Icons.star,color: Colors.black,size: 7,)
+                                        ],
+                                      ),
+                                    ),
+
+                                  )
+                                ],
+                              )
+
+                            ],
+                          )
+                      ),
+                    ),
+
+                ),
+                  );
+              },
+              separatorBuilder: (context,index){
+                return Container(height: 10.h,
+                  color: Color(0xFFFFFFFF),);
+              }, itemCount: mainModel.payload.academies.length),
+
+
+          // AcademyComponent(imageUrl: imageBaseUrl,academies: mainModel.payload.academies,),
           SizedBox(height: 10,),
 
 
 
-          Row(
-            children: [
-              Container(
-                width: 118.0,
-                height: 28.0,
-                margin: EdgeInsets.only(right: 14),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  border: Border.all(
-                    width: 1.0,
-                    color: const Color(0xFF002087),
-                  ),
-                ),
-                child: Text(
-                  'ملفات اللاعبين و المدربين',
-                  style: GoogleFonts.cairo(
-                    fontSize: 14.0,
-                    color: const Color(0xFF002087),
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-              Expanded(child:
-              SizedBox(width: 30,),
-
-              ),
-              InkWell(
-                onTap: () {
-                  Navigator.pushNamed(context, PlayerScreen.id);
-                },
-                child:
-                SizedBox(
-                  width: 65.0,
-                  height: 26.0,
-                  child: Stack(
-                    children: <Widget>[
-                      Container(
-                        width: 65.0,
-                        height: 25.0,
-                        margin: EdgeInsets.only(left: 14),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(4.0),
-                          color: const Color(0xFF002087),
-                        ),
-                        child:  Text(
-                          'الكل',
-                          style: GoogleFonts.cairo(
-                            fontSize: 14.0,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w600,
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-
-                    ],
-                  ),
-                ),
-              )
-            ],
-          ),
-          CoachComponent(imageUrl: imageBaseUrl, players: mainModel.payload.players,),
+          // Row(
+          //   children: [
+          //     Container(
+          //       width: 118.0,
+          //       height: 28.0,
+          //       margin: EdgeInsets.only(right: 14),
+          //       decoration: BoxDecoration(
+          //         color: Colors.white,
+          //         border: Border.all(
+          //           width: 1.0,
+          //           color: const Color(0xFF002087),
+          //         ),
+          //       ),
+          //       child: Text(
+          //         'ملفات اللاعبين و المدربين',
+          //         style: GoogleFonts.cairo(
+          //           fontSize: 14.0,
+          //           color: const Color(0xFF002087),
+          //         ),
+          //         textAlign: TextAlign.center,
+          //       ),
+          //     ),
+          //     Expanded(child:
+          //     SizedBox(width: 30,),
+          //
+          //     ),
+          //     InkWell(
+          //       onTap: () {
+          //         Navigator.pushNamed(context, PlayerScreen.id);
+          //       },
+          //       child:
+          //       SizedBox(
+          //         width: 65.0,
+          //         height: 26.0,
+          //         child: Stack(
+          //           children: <Widget>[
+          //             Container(
+          //               width: 65.0,
+          //               height: 25.0,
+          //               margin: EdgeInsets.only(left: 14),
+          //               decoration: BoxDecoration(
+          //                 borderRadius: BorderRadius.circular(4.0),
+          //                 color: const Color(0xFF002087),
+          //               ),
+          //               child:  Text(
+          //                 'الكل',
+          //                 style: GoogleFonts.cairo(
+          //                   fontSize: 14.0,
+          //                   color: Colors.white,
+          //                   fontWeight: FontWeight.w600,
+          //                 ),
+          //                 textAlign: TextAlign.center,
+          //               ),
+          //             ),
+          //
+          //           ],
+          //         ),
+          //       ),
+          //     )
+          //   ],
+          // ),
+          // CoachComponent(imageUrl: imageBaseUrl, players: mainModel.payload.players,),
 
         ],
       )

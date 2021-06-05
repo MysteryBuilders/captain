@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gradient_app_bar/gradient_app_bar.dart';
+
 
 class app_bar extends StatefulWidget {
   String title;
@@ -12,7 +12,7 @@ class app_bar extends StatefulWidget {
 class _app_barState extends State<app_bar> {
   @override
     Widget build(BuildContext context) {
-      return GradientAppBar(
+      return AppBar(
         title: Text(
           '${widget.title}',
           style: GoogleFonts.cairo(
@@ -23,8 +23,14 @@ class _app_barState extends State<app_bar> {
           ),
           textAlign: TextAlign.center,
         ),
-        gradient: LinearGradient(colors: [const Color(0xFFF2C046),const Color(0xFFE4AF3D),const Color(0xFFC78B2B)],begin: Alignment.bottomRight,
-          end: Alignment.topLeft,),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(colors: [const Color(0xFFF2C046),const Color(0xFFE4AF3D),const Color(0xFFC78B2B)],begin: Alignment.bottomRight,
+     end: Alignment.topLeft,),
+          ),
+        ),
+        // gradient: LinearGradient(colors: [const Color(0xFFF2C046),const Color(0xFFE4AF3D),const Color(0xFFC78B2B)],begin: Alignment.bottomRight,
+        //   end: Alignment.topLeft,),
         centerTitle: true,
         leading: Container(),
         actions: [
@@ -33,7 +39,7 @@ class _app_barState extends State<app_bar> {
               Navigator.pop(context);
             },
             child:  Center(
-                    child: Icon(Icons.arrow_back_ios_outlined,color: Colors.white,size: 20,)
+                    child: Icon(Icons.arrow_forward_ios_outlined,color: Colors.white,size: 20,)
                 )
             ),
           SizedBox(width: 10,),

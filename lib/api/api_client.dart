@@ -22,9 +22,10 @@ import 'package:captain/model/save_token_model.dart';
 import 'package:captain/model/update_profile_model.dart';
 import 'package:dio/dio.dart';
 import 'package:http/http.dart' as http;
+import 'package:shared_preferences/shared_preferences.dart';
 
 class CaptinService {
-  static String TAG_BASE_URL= "http://beta.captain23.com/api/v1/";
+  static String TAG_BASE_URL= "https://captain23.com/api/v1/";
   Future<dynamic> login(String email ,String password) async{
     Map<String, dynamic> map = {'email': email,
     'password':password};
@@ -256,12 +257,9 @@ class CaptinService {
 
 
   }
-  Future<SaveTokenModel> saveToken()async{
-    SharedPref sharedPref = SharedPref();
-    var userJson = await sharedPref.read(kUser);
-    var fireBaseToken = await sharedPref.readString(kSaveFireBaseToken);
-    Login_model login_model =  Login_model.fromJson(userJson);
-    var token = login_model.payload.accessToken;
+  Future<SaveTokenModel> saveToken(String token,String fireBaseToken)async{
+
+
     Map<String, dynamic> map = {'token':fireBaseToken};
 
 
@@ -377,7 +375,7 @@ class CaptinService {
     map['parent[name]']= parentModel.name;
     map['parent[civil_no]']= parentModel.civilId;
     map['parent[phone]']= parentModel.phone;
-    map['parent[box_no]']= parentModel.boxNo;
+    // map['parent[box_no]']= parentModel.boxNo;
     map['parent[note]']= parentModel.note;
     String parentFileName = parentModel.image.path
         .split('/')
@@ -388,6 +386,13 @@ class CaptinService {
       map['players[${i}][name]']= childModelList[i].name;
       map['players[${i}][civil_no]']= childModelList[i].civilId;
       map['players[${i}][age]']= childModelList[i].age;
+      map['players[${i}][clothes]']= childModelList[i].dressNo;
+      bool isSibiling = childModelList[i].isSiblings;
+      if(isSibiling){
+        map['players[${i}][is_brother]']= 1;
+      }else{
+        map['players[${i}][is_brother]']=0;
+      }
       String childFileName = childModelList[i].image.path
           .split('/')
           .last;

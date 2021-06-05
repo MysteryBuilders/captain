@@ -124,7 +124,7 @@ class _AcademiesCountriesScreenState extends State<AcademiesCountriesScreen> {
             widget.categoryName,
 
             style: GoogleFonts.cairo(
-              fontSize: screenUtil.setSp(18, allowFontScalingSelf: true),
+              fontSize: screenUtil.setSp(18),
               color: const Color(0xFF002087),
               letterSpacing: -0.36,
               fontWeight: FontWeight.w700,
@@ -169,7 +169,9 @@ class _AcademiesCountriesScreenState extends State<AcademiesCountriesScreen> {
                         borderRadius: BorderRadius.circular(4.0.h),
                         color: const Color(0xFFF2C046)
                     ),
-                    child: DropDown<Cities>(
+                    child:
+
+                    DropDown<Cities>(
 
 
 
@@ -182,7 +184,7 @@ class _AcademiesCountriesScreenState extends State<AcademiesCountriesScreen> {
 
                             color: Color(0xFF000000),
                             fontWeight: FontWeight.w600,
-                            fontSize: screenUtil.setSp(15,allowFontScalingSelf: true)
+                            fontSize: screenUtil.setSp(15)
                         ),),
                       onChanged: (Cities city){
                         
@@ -273,7 +275,7 @@ isLoading?Container(
                                                 mAcademyList[index].name,
                                                 style: TextStyle(
                                                     fontWeight: FontWeight.bold,
-                                                    fontSize: screenUtil.setSp(14,allowFontScalingSelf: true),
+                                                    fontSize: screenUtil.setSp(14),
                                                     color: Color(0xFF002087)
                                                 ),
                                               ),
@@ -291,7 +293,7 @@ isLoading?Container(
                                                         "${mAcademyList[index].price} د.ك ",
                                                         style: TextStyle(
                                                             fontWeight: FontWeight.bold,
-                                                            fontSize: screenUtil.setSp(14,allowFontScalingSelf: true),
+                                                            fontSize: screenUtil.setSp(14),
                                                             color: Color(0xFF717171)
                                                         ),
                                                       ),
@@ -348,7 +350,7 @@ isLoading?Container(
               style: TextStyle(
                 color: Color(0xFF000000),
                 fontWeight: FontWeight.w600,
-                fontSize: screenUtil.setSp(15,allowFontScalingSelf: true)
+                fontSize: screenUtil.setSp(15)
               ),)),
         ),
 

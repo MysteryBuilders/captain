@@ -40,7 +40,8 @@ class _AcademyComponentState extends State<AcademyComponent> {
                     // Navigator.of(context).push(MaterialPageRoute(
                     //     builder: (context) => AcademyDetail(academy_id: '${i.id}',)));
                   },
-                  child:  Container(
+                  child:
+                  Container(
                     height:220,
                     margin: EdgeInsets.symmetric(horizontal: 8),
                     decoration: BoxDecoration(

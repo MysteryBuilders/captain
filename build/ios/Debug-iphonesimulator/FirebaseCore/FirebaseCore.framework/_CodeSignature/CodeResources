@@ -18,19 +18,23 @@
 		</data>
 		<key>Headers/FIROptions.h</key>
 		<data>
-		6DWVDpjkBlwzR8fb5c966x27FTE=
+		p3ooFCdPxgzkaa5vwhizxl3tYMM=
+		</data>
+		<key>Headers/FIRVersion.h</key>
+		<data>
+		HcSd1GES9ysOBTf5qT7L6hxRfqQ=
 		</data>
 		<key>Headers/FirebaseCore-umbrella.h</key>
 		<data>
-		HwGMP+kGblJsRnNL7pnm/Y/B5cs=
+		9mUW0slJTxtirtcy67uYxFP7BnA=
 		</data>
 		<key>Headers/FirebaseCore.h</key>
 		<data>
-		yXddqnH6Si6OU9ppwe7xulbpVYo=
+		1cV5ZW/3+cyH6+oNi4QffBtH4j4=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RnczehnAJCjO4kg900i21FmUXB8=
+		XRxouj08nc2kqXTG2G6FiDD1lg0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -38,7 +42,7 @@
 		</data>
 		<key>PrivateHeaders/FIRAppInternal.h</key>
 		<data>
-		GnZ4ddipGdGoW59oURB16hkrFi8=
+		Xxh4YMjD7VhuHIH5I0Yfzi+ltbA=
 		</data>
 		<key>PrivateHeaders/FIRComponent.h</key>
 		<data>
@@ -46,7 +50,7 @@
 		</data>
 		<key>PrivateHeaders/FIRComponentContainer.h</key>
 		<data>
-		Q+Nbg0Fd+3C4e0pULRb1PEB3FaQ=
+		UoomgyhqNRkBFOCdQ9V5m6VC+Yk=
 		</data>
 		<key>PrivateHeaders/FIRComponentType.h</key>
 		<data>
@@ -60,33 +64,25 @@
 		<data>
 		uYNS0fL/S1gyBI3/J3erEWzHuiU=
 		</data>
-		<key>PrivateHeaders/FIRErrorCode.h</key>
-		<data>
-		EK2OszxQPy0NV4YbuQWzLI50wXw=
-		</data>
-		<key>PrivateHeaders/FIRErrors.h</key>
-		<data>
-		5txW4DMfAYgqhqqtoSZdK6uL61k=
-		</data>
 		<key>PrivateHeaders/FIRHeartbeatInfo.h</key>
 		<data>
-		tNg/kXA5V7BFDg598I9P2pc8Dmc=
+		wRtoWE7CAKbQfe+8mAdqZnAReGU=
 		</data>
 		<key>PrivateHeaders/FIRLibrary.h</key>
 		<data>
-		3KdPXBeOz69dM+f0e9KBnwhZOJs=
+		PC8GsdFfU9sd6O2fGvipe5yb2M0=
 		</data>
 		<key>PrivateHeaders/FIRLogger.h</key>
 		<data>
-		q0oA05f5+EXsFw2RNcaBAxXJDg0=
+		e2Pv5ob1PGUR0kMEe91oKdCwiYw=
 		</data>
 		<key>PrivateHeaders/FIROptionsInternal.h</key>
 		<data>
-		clZFXECLOyWJeV9du7LexIvdj4A=
+		od+zSJ+USLZPOvhfiMy8ImbFXyc=
 		</data>
 		<key>PrivateHeaders/FirebaseCoreInternal.h</key>
 		<data>
-		GbN8IepbrbRbO2fGp27Cdk2afy8=
+		aKSvrrgxyK6SJBKwb2buWzpSiOs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -128,33 +124,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6DWVDpjkBlwzR8fb5c966x27FTE=
+			p3ooFCdPxgzkaa5vwhizxl3tYMM=
 			</data>
 			<key>hash2</key>
 			<data>
-			zcXC79XeyaDj8u8hrKDyOLQOxzF+1NMvQHAmok5EMK8=
+			W967zVKrA+ikdKfXADDt5PptpEkKOjK6M8Z3CFTF0lA=
+			</data>
+		</dict>
+		<key>Headers/FIRVersion.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HcSd1GES9ysOBTf5qT7L6hxRfqQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			NG9j3x+7eoaNIbVlDwc+g0Seqt3pCsQBAtTZslx6/xg=
 			</data>
 		</dict>
 		<key>Headers/FirebaseCore-umbrella.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HwGMP+kGblJsRnNL7pnm/Y/B5cs=
+			9mUW0slJTxtirtcy67uYxFP7BnA=
 			</data>
 			<key>hash2</key>
 			<data>
-			3K5e41GvCnUZIeoiB9mYptsMrkoc/z7IxIJd/nkovTw=
+			iwHinUnNhI7vMXN2pesmKujJ+nDOc+v+J537rjLL2o4=
 			</data>
 		</dict>
 		<key>Headers/FirebaseCore.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yXddqnH6Si6OU9ppwe7xulbpVYo=
+			1cV5ZW/3+cyH6+oNi4QffBtH4j4=
 			</data>
 			<key>hash2</key>
 			<data>
-			/VkT1jJQhj44uk+7N+rmuexwEr0f2kui3EG6M249GyU=
+			LGQ1nF3qjoVSkAkKAwJcNkfrSCqnDmEQ/6NBPHCg1Ug=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -172,11 +179,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GnZ4ddipGdGoW59oURB16hkrFi8=
+			Xxh4YMjD7VhuHIH5I0Yfzi+ltbA=
 			</data>
 			<key>hash2</key>
 			<data>
-			1qM4C8Fo2PAR4EzSCcSQx1UUhYIDUDmJ7CcU2RQZyRM=
+			UutyS+QSQtKNjmSF2aja7uEiyzNJf3ivw44geKl3Y+4=
 			</data>
 		</dict>
 		<key>PrivateHeaders/FIRComponent.h</key>
@@ -194,11 +201,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q+Nbg0Fd+3C4e0pULRb1PEB3FaQ=
+			UoomgyhqNRkBFOCdQ9V5m6VC+Yk=
 			</data>
 			<key>hash2</key>
 			<data>
-			ncjk5j6HCXSV99HI4bDznYUkeZ+JqriuZEOnJUz+dnc=
+			tjUOJtUndmuGYiXQFnuSjGACPByO/bDR+IflYPvYX8c=
 			</data>
 		</dict>
 		<key>PrivateHeaders/FIRComponentType.h</key>
@@ -234,81 +241,59 @@
 			0+AUURSQjKipNiWLkzUCn83IOO3+Slk3Wna7bKy8Jrk=
 			</data>
 		</dict>
-		<key>PrivateHeaders/FIRErrorCode.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EK2OszxQPy0NV4YbuQWzLI50wXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			1z0G/0AoTaZyqUQMsSAPBS1KdPdcBre6iXlQv1MZuYI=
-			</data>
-		</dict>
-		<key>PrivateHeaders/FIRErrors.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5txW4DMfAYgqhqqtoSZdK6uL61k=
-			</data>
-			<key>hash2</key>
-			<data>
-			XNbkxxyiehiCrs7xgesKbgb1Lc6XU0uCbC0RBqUToyo=
-			</data>
-		</dict>
 		<key>PrivateHeaders/FIRHeartbeatInfo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tNg/kXA5V7BFDg598I9P2pc8Dmc=
+			wRtoWE7CAKbQfe+8mAdqZnAReGU=
 			</data>
 			<key>hash2</key>
 			<data>
-			TXhQilnZIwaeYXFCH8iITucKtZqnZowvfNdRLaVja2E=
+			pLiVpXljKaVUUtrXsrOvyGimVgsBmQcSh8fEgKMl8gs=
 			</data>
 		</dict>
 		<key>PrivateHeaders/FIRLibrary.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3KdPXBeOz69dM+f0e9KBnwhZOJs=
+			PC8GsdFfU9sd6O2fGvipe5yb2M0=
 			</data>
 			<key>hash2</key>
 			<data>
-			lfMDjns9u5S2zDMkz0tOk/2WjWFeaOk8cuny4YgfwvY=
+			ISv+5xzdZbW6kLSM1SI+Ot8DEJSH4WWrf5Eeh+Nw/kc=
 			</data>
 		</dict>
 		<key>PrivateHeaders/FIRLogger.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			q0oA05f5+EXsFw2RNcaBAxXJDg0=
+			e2Pv5ob1PGUR0kMEe91oKdCwiYw=
 			</data>
 			<key>hash2</key>
 			<data>
-			PsylT+B9oX4UWpYOzsk7oiLwLGKWZnQ3Yp1mm1vC3I4=
+			2Ch4e8wjnU6CJR1Od9AA/EIy0AHkQEyAQ4wcoH58VgQ=
 			</data>
 		</dict>
 		<key>PrivateHeaders/FIROptionsInternal.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			clZFXECLOyWJeV9du7LexIvdj4A=
+			od+zSJ+USLZPOvhfiMy8ImbFXyc=
 			</data>
 			<key>hash2</key>
 			<data>
-			uSpb9k20EPc+G9fQ9vk+KIUaFvGE5MM66ZRmiAKF2Oc=
+			WaSeq5A1iQWcZOCE1OzjfGmcorAKmpyRrzQNKSj9B1k=
 			</data>
 		</dict>
 		<key>PrivateHeaders/FirebaseCoreInternal.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GbN8IepbrbRbO2fGp27Cdk2afy8=
+			aKSvrrgxyK6SJBKwb2buWzpSiOs=
 			</data>
 			<key>hash2</key>
 			<data>
-			J42jsAUviw0h/kxJPYKBysPlnOrSa1wmEekrG5dTVIE=
+			51f/DJDaXZJkn1Swn2okfk0mAln3sCG2kEYWWJwM1M4=
 			</data>
 		</dict>
 	</dict>

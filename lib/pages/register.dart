@@ -11,6 +11,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'home.dart';
 
@@ -57,7 +58,15 @@ class _RegisterState extends State<Register> {
           await sharedPref.saveString(kUserPassword, password);
          await sharedPref.saveString(kUserName, login_model.payload.user.name);
          await sharedPref.saveString(KImage, login_model.payload.user.img);
-          SaveTokenModel saveTokenModel = await captinService.saveToken();
+         SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+
+
+
+
+         var fireBaseToken = sharedPreferences.getString(kSaveFireBaseToken);
+
+         var token = login_model.payload.accessToken;
+          SaveTokenModel saveTokenModel = await captinService.saveToken(token,fireBaseToken);
 
           _scaffoldKey.currentState.showSnackBar(SnackBar(content: Text('مرحبا بك ')));
          Navigator.pushNamedAndRemoveUntil(context, Home.id, (route) => false);

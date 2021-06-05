@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/FLTFirebaseMessagingPlugin.h</key>
 		<data>
-		i7UjJlov0cBmKJdF6wbUMnrUQnI=
+		+AZIg+mfz9Cr0M3cEqTeT+VhqFs=
 		</data>
 		<key>Headers/firebase_messaging-umbrella.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jQ5hIAWhcZ5bZmspurMrQnWIGN0=
+		i2ZYu+1CueZCafJDgoVAWMQJGHM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -27,11 +27,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			i7UjJlov0cBmKJdF6wbUMnrUQnI=
+			+AZIg+mfz9Cr0M3cEqTeT+VhqFs=
 			</data>
 			<key>hash2</key>
 			<data>
-			x949UNQaFmhvBd3Ln2Qb4Tew2Fx3MRqgqQeqLIEg0Ss=
+			b2bYx1qw00mCKcWZlo+/Eo2v5aiaUN0U1zraLDK3IxY=
 			</data>
 		</dict>
 		<key>Headers/firebase_messaging-umbrella.h</key>

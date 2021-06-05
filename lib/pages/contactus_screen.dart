@@ -97,7 +97,7 @@ _email = value;
                                 child: Text(
                                   'إرسال',
                                   style: GoogleFonts.cairo(
-                                    fontSize: screenUtil.setSp(13,allowFontScalingSelf: true),
+                                    fontSize: screenUtil.setSp(13),
                                     color: Colors.black,
                                     fontWeight: FontWeight.w700,
                                   ),

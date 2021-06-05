@@ -4,17 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/FIRCoreDiagnistics.h</key>
+		<key>Headers/FIRCoreDiagnostics.h</key>
 		<data>
 		GITcu3gAbquOEA3mKpqnb+mlCBw=
 		</data>
 		<key>Headers/FirebaseCoreDiagnostics-umbrella.h</key>
 		<data>
-		UwJgLL/bF8Hb6fvpeb7ybdZUGnY=
+		4JmL8IjLOD4CVKh0agRXI2t0pTI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tv2LeQXwl2fOs1tr6lMHhcu453M=
+		dS309+oC1vk9fHkpHWbkmoIRve4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -23,7 +23,7 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/FIRCoreDiagnistics.h</key>
+		<key>Headers/FIRCoreDiagnostics.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -38,11 +38,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UwJgLL/bF8Hb6fvpeb7ybdZUGnY=
+			4JmL8IjLOD4CVKh0agRXI2t0pTI=
 			</data>
 			<key>hash2</key>
 			<data>
-			nvN77zKVS7gSZcYwNRaXxBr2zo/Ydsf6PidAQ39DSVY=
+			KIngDWqtudDuzaN2BPqOfuA1UMncorS9jBLJlpJsUUI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

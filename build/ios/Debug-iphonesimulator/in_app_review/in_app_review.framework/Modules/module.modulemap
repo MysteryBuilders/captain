@@ -4,8 +4,3 @@ framework module in_app_review {
   export *
   module * { export * }
 }
-
-module in_app_review.Swift {
-    header "in_app_review-Swift.h"
-    requires objc
-}

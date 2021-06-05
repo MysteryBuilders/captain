@@ -246,7 +246,7 @@ setState(() {
                   child:
                   Text('أنواع الرياضات',style:
                     TextStyle(color: Color(0xFF000000),
-                    fontSize: screenUtil.setSp(20,allowFontScalingSelf: true),
+                    fontSize: screenUtil.setSp(20),
                     fontWeight: FontWeight.bold),),
                 ),
                 Row(
@@ -303,7 +303,7 @@ setState(() {
                                       academiesModel.payload.academies.data[0].cat.name,
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: screenUtil.setSp(14,allowFontScalingSelf: true),
+                                      fontSize: screenUtil.setSp(14),
                                       color: Color(0xFF002087)
                                     ),
                                   ),
@@ -318,7 +318,7 @@ setState(() {
 
                 Text('آخر الأكاديميات المضافة',style:
                 TextStyle(color: Color(0xFF000000),
-                    fontSize: screenUtil.setSp(20,allowFontScalingSelf: true),
+                    fontSize: screenUtil.setSp(20),
                     fontWeight: FontWeight.bold),),
                 SizedBox(height: 10.h,),
 
@@ -387,7 +387,7 @@ setState(() {
                                                   mAcademeiesList[index].name,
                                                   style: TextStyle(
                                                       fontWeight: FontWeight.bold,
-                                                      fontSize: screenUtil.setSp(14,allowFontScalingSelf: true),
+                                                      fontSize: screenUtil.setSp(14),
                                                       color: Color(0xFF002087)
                                                   ),
                                                 ),
@@ -405,7 +405,7 @@ setState(() {
                                                           "${mAcademeiesList[index].price} د.ك ",
                                                           style: TextStyle(
                                                               fontWeight: FontWeight.bold,
-                                                              fontSize: screenUtil.setSp(14,allowFontScalingSelf: true),
+                                                              fontSize: screenUtil.setSp(14),
                                                               color: Color(0xFF717171)
                                                           ),
                                                         ),

@@ -107,7 +107,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
         children: [
           Text('آخر الملفات المضافة',style:
           TextStyle(color: Color(0xFF000000),
-              fontSize: screenUtil.setSp(20,allowFontScalingSelf: true),
+              fontSize: screenUtil.setSp(20),
               fontWeight: FontWeight.bold),),
           SizedBox(height: 10.h,),
           GridView.builder(
@@ -195,7 +195,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                                               mPlayersList[index].name,
                                               style: TextStyle(
                                                   fontWeight: FontWeight.bold,
-                                                  fontSize: screenUtil.setSp(14,allowFontScalingSelf: true),
+                                                  fontSize: screenUtil.setSp(14),
                                                   color: Color(0xFF000000)
                                               ),
                                             ),
@@ -213,7 +213,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                                                       "الصنف:",
                                                       style: TextStyle(
                                                           fontWeight: FontWeight.bold,
-                                                          fontSize: screenUtil.setSp(13,allowFontScalingSelf: true),
+                                                          fontSize: screenUtil.setSp(13),
                                                           color: Color(0xFF002087)
                                                       ),
                                                     ),
@@ -227,7 +227,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                                                       mPlayersList[index].cat.name,
                                                       style: TextStyle(
                                                           fontWeight: FontWeight.bold,
-                                                          fontSize: screenUtil.setSp(13,allowFontScalingSelf: true),
+                                                          fontSize: screenUtil.setSp(13),
                                                           color: Color(0xFF717171)
                                                       ),
                                                     ),
@@ -249,7 +249,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                                               mPlayersList[index].country.countryname,
                                               style: TextStyle(
                                                   fontWeight: FontWeight.bold,
-                                                  fontSize: screenUtil.setSp(14,allowFontScalingSelf: true),
+                                                  fontSize: screenUtil.setSp(14),
                                                   color: Color(0xFF000000)
                                               ),
                                             ),

@@ -72,7 +72,8 @@ return  map;
             children: [
               SizedBox(
                 width: 252,
-                child:  Row(
+                child:
+                Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Text(
@@ -341,93 +342,93 @@ return  map;
 
                 ],
               ),
-              Row(
-                children: <Widget>[
-                  SizedBox(width: 15,),
-                  widget.mAcademy.gender !='ذكر' ?
-                  Container(
-                    alignment: Alignment(-0.04, -1.0),
-                    width: 101.0,
-                    height: 33.0,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(18.0),
-                      color: const Color(0xFFDBE4FF),
-                      border: Border.all(
-                        width: 1.0,
-                        color: const Color(0xFF002087),
-                      ),
-                    ),
-                    child:
-                    SizedBox(
-                      width: 47.11,
-                      height: 30.0,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: <Widget>[
-                          Align(
-                              alignment: Alignment(0.0, 0.2),
-                              child: Image.asset('images/woman.png')
-                          ),
-                          Text(
-                            'إناث',
-                            style: GoogleFonts.cairo(
-                              fontSize: 16.0,
-                              color: const Color(0xFF002087),
-                              letterSpacing: -0.32,
-                              fontWeight: FontWeight.w600,
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
-
-                        ],
-                      ),
-                    ),
-                  ):SizedBox(),
-                  SizedBox(width: 15,),
-                  widget.mAcademy.gender !='أنثى' ?
-                  Container(
-                    alignment: Alignment(-0.04, -1.0),
-                    width: 101.0,
-                    height: 33.0,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(18.0),
-                      color: const Color(0xFFDBE4FF),
-                      border: Border.all(
-                        width: 1.0,
-                        color: const Color(0xFF002087),
-                      ),
-                    ),
-                    child:
-// Group: Group 258
-
-                    SizedBox(
-                      width: 53.21,
-                      height: 30.0,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: <Widget>[
-                          Align(
-                              alignment: Alignment(0.0, 0.2),
-                              child: Image.asset('images/man.png')
-                          ),
-                          Text(
-                            'ذكور',
-                            style: GoogleFonts.cairo(
-                              fontSize: 16.0,
-                              color: const Color(0xFF002087),
-                              letterSpacing: -0.32,
-                              fontWeight: FontWeight.w600,
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
-
-                        ],
-                      ),
-                    ),
-                  ):SizedBox(),
-                ],
-              ),
-              SizedBox(height: 12,),
+//               Row(
+//                 children: <Widget>[
+//                   SizedBox(width: 15,),
+//                   widget.mAcademy.gender !='ذكر' ?
+//                   Container(
+//                     alignment: Alignment(-0.04, -1.0),
+//                     width: 101.0,
+//                     height: 33.0,
+//                     decoration: BoxDecoration(
+//                       borderRadius: BorderRadius.circular(18.0),
+//                       color: const Color(0xFFDBE4FF),
+//                       border: Border.all(
+//                         width: 1.0,
+//                         color: const Color(0xFF002087),
+//                       ),
+//                     ),
+//                     child:
+//                     SizedBox(
+//                       width: 47.11,
+//                       height: 30.0,
+//                       child: Row(
+//                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                         children: <Widget>[
+//                           Align(
+//                               alignment: Alignment(0.0, 0.2),
+//                               child: Image.asset('images/woman.png')
+//                           ),
+//                           Text(
+//                             'إناث',
+//                             style: GoogleFonts.cairo(
+//                               fontSize: 16.0,
+//                               color: const Color(0xFF002087),
+//                               letterSpacing: -0.32,
+//                               fontWeight: FontWeight.w600,
+//                             ),
+//                             textAlign: TextAlign.center,
+//                           ),
+//
+//                         ],
+//                       ),
+//                     ),
+//                   ):SizedBox(),
+//                   SizedBox(width: 15,),
+//                   widget.mAcademy.gender !='أنثى' ?
+//                   Container(
+//                     alignment: Alignment(-0.04, -1.0),
+//                     width: 101.0,
+//                     height: 33.0,
+//                     decoration: BoxDecoration(
+//                       borderRadius: BorderRadius.circular(18.0),
+//                       color: const Color(0xFFDBE4FF),
+//                       border: Border.all(
+//                         width: 1.0,
+//                         color: const Color(0xFF002087),
+//                       ),
+//                     ),
+//                     child:
+// // Group: Group 258
+//
+//                     SizedBox(
+//                       width: 53.21,
+//                       height: 30.0,
+//                       child: Row(
+//                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                         children: <Widget>[
+//                           Align(
+//                               alignment: Alignment(0.0, 0.2),
+//                               child: Image.asset('images/man.png')
+//                           ),
+//                           Text(
+//                             'ذكور',
+//                             style: GoogleFonts.cairo(
+//                               fontSize: 16.0,
+//                               color: const Color(0xFF002087),
+//                               letterSpacing: -0.32,
+//                               fontWeight: FontWeight.w600,
+//                             ),
+//                             textAlign: TextAlign.center,
+//                           ),
+//
+//                         ],
+//                       ),
+//                     ),
+//                   ):SizedBox(),
+//                 ],
+//               ),
+//               SizedBox(height: 12,),
               Row(
                 children: [
                   SizedBox(width: 12,),
@@ -512,13 +513,13 @@ return  map;
               Padding(padding: EdgeInsets.symmetric(horizontal: 16),
                 child:  Container(
                   child:  Html(
-                    customTextAlign: (_) => TextAlign.right,
-                    defaultTextStyle: GoogleFonts.cairo(
-                      fontSize: 13.0,
-                      color: const Color(0xFF002087),
-                      letterSpacing: -0.26,
-                      fontWeight: FontWeight.w700,
-                    ),
+                    // customTextAlign: (_) => TextAlign.right,
+                    // defaultTextStyle: GoogleFonts.cairo(
+                    //   fontSize: 13.0,
+                    //   color: const Color(0xFF002087),
+                    //   letterSpacing: -0.26,
+                    //   fontWeight: FontWeight.w700,
+                    // ),
                     data: '${widget.mAcademy.content}',
                   ),
                 ),

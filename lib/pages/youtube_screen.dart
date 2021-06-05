@@ -45,7 +45,8 @@ class _YouTubeScreenState extends State<YouTubeScreen> {
             child:
             Container(
               child: Center(
-                child: YoutubePlayer(controller: _controller,
+                child:
+                YoutubePlayer(controller: _controller,
                 showVideoProgressIndicator: true,
 
 

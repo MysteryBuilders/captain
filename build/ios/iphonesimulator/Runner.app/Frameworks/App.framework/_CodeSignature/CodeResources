@@ -10,15 +10,15 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		egugmtJKyycpEgkPC7xsEbGoluI=
+		jxDq5EZJgI93nmIVtjG/eW3NX+o=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
-		9BG4nB/eRAtT9RchvUVdtUIDe1I=
+		0gGSH0WgoLERiNK9OVUrcnxbg6k=
 		</data>
 		<key>flutter_assets/NOTICES</key>
 		<data>
-		L+VF7f3/LZD1qvp1bmmw6FYWy/8=
+		y5eoWj9/7rojvewfEy8FYDgssJM=
 		</data>
 		<key>flutter_assets/fonts/FFShamel.ttf</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
-		XxTTbEdqMMr+614Mzm3EJYMaT9I=
+		33xe6rFwPlxRnZOgZWsODADpUI4=
 		</data>
 		<key>flutter_assets/fonts/cairo/Cairo-Regular.ttf</key>
 		<data>
@@ -186,11 +186,11 @@
 		</data>
 		<key>flutter_assets/isolate_snapshot_data</key>
 		<data>
-		IFA8wpsYhsgLNUd9Ts9Z1VaOxt8=
+		ELluN2aQ5lXx4NZnJlBUXyZEfGo=
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		fHjYoto8lYvYeWUPgqEw/9u0hCM=
+		+POST7nW6q1XCYFFgN3aDhyNxyU=
 		</data>
 		<key>flutter_assets/lang/ar.json</key>
 		<data>
@@ -202,7 +202,7 @@
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
-		akB+MdVeMuxQXcnItb5e3jkn6Ek=
+		P7bb/oR3EhwqCIH1M6LyTuBIWYU=
 		</data>
 		<key>flutter_assets/packages/flutter_inappwebview/t_rex_runner/t-rex.css</key>
 		<data>
@@ -212,25 +212,117 @@
 		<data>
 		60RUAYYoUnETCwVvpgmbGYgxn8Q=
 		</data>
-		<key>flutter_assets/packages/flutter_widget_from_html/test/images/logo.svg</key>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_AMS-Regular.ttf</key>
 		<data>
-		J1r337zBCTR0cFfTUjjhLkUNHMw=
+		jLEYenrrwywd6geSl2moSelD/08=
+		</data>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Caligraphic-Bold.ttf</key>
+		<data>
+		PqqDAykNlGTU/nOXBgeIuGs5ego=
+		</data>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Caligraphic-Regular.ttf</key>
+		<data>
+		IouOybFaKIVLW3bZb4jL8q2wzng=
+		</data>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Fraktur-Bold.ttf</key>
+		<data>
+		++7e6p6itiOrZisMT9gFdqCh3rg=
+		</data>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Fraktur-Regular.ttf</key>
+		<data>
+		9E7ZGhxbIkKdaGS3Cgca7UKTouY=
+		</data>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Main-Bold.ttf</key>
+		<data>
+		lmVQInlzfThmItFUeXtv3Lol9BM=
+		</data>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Main-BoldItalic.ttf</key>
+		<data>
+		feolgbw+wXNqdx2vFu9Emh0W7fg=
+		</data>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Main-Italic.ttf</key>
+		<data>
+		RkZrGwfb//UhZjbNrbTvf9ZNrsc=
+		</data>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Main-Regular.ttf</key>
+		<data>
+		D+1uLbcWs4g0jBzL9gxekoXrfZw=
+		</data>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Math-BoldItalic.ttf</key>
+		<data>
+		ir7aGCiPc1mC8eU63hKIdo0uZZs=
+		</data>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Math-Italic.ttf</key>
+		<data>
+		PM+pj61qWohcZ6+BFmTGWY5Ev2o=
+		</data>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_SansSerif-Bold.ttf</key>
+		<data>
+		70ihQLtcOmFm2lMLLKRw2ay1kOM=
+		</data>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_SansSerif-Italic.ttf</key>
+		<data>
+		1SaCTrRWLkq0fARSaHp1Z42lFuo=
+		</data>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_SansSerif-Regular.ttf</key>
+		<data>
+		1ovkUgW6Fznp9olk/Wo6pFRwQkY=
+		</data>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Script-Regular.ttf</key>
+		<data>
+		hYINNHvTTWOnApsTL7ny7uX/2nI=
+		</data>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Size1-Regular.ttf</key>
+		<data>
+		DzqKyIJ0ld1K0bZVslsJubPzr5g=
+		</data>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Size2-Regular.ttf</key>
+		<data>
+		ViU/GeXQGT/5DqhLIBbhhs7HQSg=
+		</data>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Size3-Regular.ttf</key>
+		<data>
+		ZICMN4NDLicD137YvFXcJ3jQ+mQ=
+		</data>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Size4-Regular.ttf</key>
+		<data>
+		FFCzbiqpMa1vgFnFJSpvXexZX/c=
+		</data>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Typewriter-Regular.ttf</key>
+		<data>
+		HQs50swkhGUKEizNysX/ez0DRnc=
+		</data>
+		<key>flutter_assets/packages/flutter_widget_from_html/test/images/.gitkeep</key>
+		<data>
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 		</data>
 		<key>flutter_assets/packages/flutter_widget_from_html_core/test/images/logo.png</key>
 		<data>
 		3QRSgCygzWyBubWYKutWsFG3OCk=
 		</data>
+		<key>flutter_assets/packages/fluttertoast/assets/toastify.css</key>
+		<data>
+		HVkEhoid+n6bwOYCwZg4DdmGBHY=
+		</data>
+		<key>flutter_assets/packages/fluttertoast/assets/toastify.js</key>
+		<data>
+		Q0Yr9JVfSBiRH22TkE46LT+KLE8=
+		</data>
 		<key>flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf</key>
 		<data>
-		XbubBciGBT8afjTe1WNIfp7cCS0=
+		BV6ddA9KSAfBO+sPqqAjjvEuOdo=
 		</data>
 		<key>flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf</key>
 		<data>
-		wRWv6zcGc5iMPwgf3ucL1uDqLkQ=
+		pBPI2simJenD86E05mXmIqcIX5g=
 		</data>
 		<key>flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf</key>
 		<data>
-		Qfi9k9B/B7MIN4mQdgznFsDcPwY=
+		aUuKJEX/Od5BW/R5GEVEKnsbgeU=
+		</data>
+		<key>flutter_assets/packages/fwfh_svg/test/images/logo.svg</key>
+		<data>
+		J1r337zBCTR0cFfTUjjhLkUNHMw=
 		</data>
 		<key>flutter_assets/packages/wakelock_web/assets/no_sleep.js</key>
 		<data>
@@ -242,7 +334,7 @@
 		</data>
 		<key>flutter_assets/vm_snapshot_data</key>
 		<data>
-		PVqFLmX9s4tyV1YTHpe6dp/PVWU=
+		BICKLyZmEDX0yMJrQwYDz3tKwt8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -251,33 +343,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			egugmtJKyycpEgkPC7xsEbGoluI=
+			jxDq5EZJgI93nmIVtjG/eW3NX+o=
 			</data>
 			<key>hash2</key>
 			<data>
-			MYDKlQ6F3Ulpw58/hPGyizTTV8Q9kiMN9T5fnLLIJ6o=
+			Op/x4t1ATiMVPePrXnw3X/3Lo9c+MhKz6HK+NGTSHsI=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9BG4nB/eRAtT9RchvUVdtUIDe1I=
+			0gGSH0WgoLERiNK9OVUrcnxbg6k=
 			</data>
 			<key>hash2</key>
 			<data>
-			K3LgEsSyO0d2iF0ypmEhFkvS5gmRVhzcXTVU/ybSwaU=
+			Gjxnow4Y4SDIzFu5yMsMGb0saKIx4GbqLsrqQJWqcP0=
 			</data>
 		</dict>
 		<key>flutter_assets/NOTICES</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			L+VF7f3/LZD1qvp1bmmw6FYWy/8=
+			y5eoWj9/7rojvewfEy8FYDgssJM=
 			</data>
 			<key>hash2</key>
 			<data>
-			oo85FPEyIzYKKEl9E2jXKOVnpJMZJIXcerphxj63HnM=
+			eB7tudxqcNdK1Dfm8uQXzlwfOzpvsoprkNaw+5w+ir8=
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/FFShamel.ttf</key>
@@ -295,11 +387,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XxTTbEdqMMr+614Mzm3EJYMaT9I=
+			33xe6rFwPlxRnZOgZWsODADpUI4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Nt7OTUXA/dkAWXOmvWbTlkJLC1yvAxfCcd3OIaLWdQQ=
+			0E0I/gLatnGI9y4elyWPSg2LWYJSPgLt6hMvgJD5+rQ=
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/cairo/Cairo-Regular.ttf</key>
@@ -724,22 +816,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IFA8wpsYhsgLNUd9Ts9Z1VaOxt8=
+			ELluN2aQ5lXx4NZnJlBUXyZEfGo=
 			</data>
 			<key>hash2</key>
 			<data>
-			jeNLJ5XygNyvkmx9Um7tJKZk8pFo+JKqChC0fW7Ykc0=
+			d5Zhq5S+3ylGF8osqx2M/nYmzI/1w4FDUIjGiKWFaOc=
 			</data>
 		</dict>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fHjYoto8lYvYeWUPgqEw/9u0hCM=
+			+POST7nW6q1XCYFFgN3aDhyNxyU=
 			</data>
 			<key>hash2</key>
 			<data>
-			z5Xb81Z35Xb+c3hgaN2j76HIYcVFSFxOt2We+ifICAg=
+			Gg6IsOJ5180lg8gFYDAstAcm32P+t8EE2Di3DH5Z1+Y=
 			</data>
 		</dict>
 		<key>flutter_assets/lang/ar.json</key>
@@ -768,11 +860,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			akB+MdVeMuxQXcnItb5e3jkn6Ek=
+			P7bb/oR3EhwqCIH1M6LyTuBIWYU=
 			</data>
 			<key>hash2</key>
 			<data>
-			sNxA7xzwH5ge9e8Ti6X2Mg2S9fg9KArmX5ax11OBzRo=
+			x6NX+tjyECiQtyzbbjyY8U2zoZ7GDbJtE+T+k/dzgI0=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/flutter_inappwebview/t_rex_runner/t-rex.css</key>
@@ -797,15 +889,235 @@
 			3HLPwfHSpQE7ud40+MrPXiblQtfXE/y+CbhltKrKbd8=
 			</data>
 		</dict>
-		<key>flutter_assets/packages/flutter_widget_from_html/test/images/logo.svg</key>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_AMS-Regular.ttf</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			J1r337zBCTR0cFfTUjjhLkUNHMw=
+			jLEYenrrwywd6geSl2moSelD/08=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ve/8vVFFfp8r/CUZTnvm/sgzaGNLM5Ex5Xi9lWQzYt4=
+			hfnyIk+dMEkQOUI72TY0BznGpP3PbzE7/dmiNzF4XGw=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Caligraphic-Bold.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PqqDAykNlGTU/nOXBgeIuGs5ego=
+			</data>
+			<key>hash2</key>
+			<data>
+			7W87XgQdFpKG22bQi0iHlZ0Sr/obOUKL4Dz/PfCwDgw=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Caligraphic-Regular.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IouOybFaKIVLW3bZb4jL8q2wzng=
+			</data>
+			<key>hash2</key>
+			<data>
+			Dqk4aEZqvdqdinreVCnDM9cmBMuAJ/RaiRCfrVbzfbI=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Fraktur-Bold.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			++7e6p6itiOrZisMT9gFdqCh3rg=
+			</data>
+			<key>hash2</key>
+			<data>
+			HHQignD/9racESB68ZO6Sp3zIFZ50rWlnqTGr6R9UzA=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Fraktur-Regular.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9E7ZGhxbIkKdaGS3Cgca7UKTouY=
+			</data>
+			<key>hash2</key>
+			<data>
+			f7Q+O8RgyRjMG8KFujM9kYqpT/14XGF0bwQhfSoHxWE=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Main-Bold.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lmVQInlzfThmItFUeXtv3Lol9BM=
+			</data>
+			<key>hash2</key>
+			<data>
+			r7p3knaruQ0B191PtWkIQnOJAHSQdBBqstle/eTzWGM=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Main-BoldItalic.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			feolgbw+wXNqdx2vFu9Emh0W7fg=
+			</data>
+			<key>hash2</key>
+			<data>
+			j33tBnmqvwecZR4APXvQK3SdYrBv62fLegiVhLyLdNk=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Main-Italic.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RkZrGwfb//UhZjbNrbTvf9ZNrsc=
+			</data>
+			<key>hash2</key>
+			<data>
+			XR9pPTq7/jgOwXWH0BJ6FDidXZrWMmVXXv1pK5fHsEY=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Main-Regular.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D+1uLbcWs4g0jBzL9gxekoXrfZw=
+			</data>
+			<key>hash2</key>
+			<data>
+			M0+TOnLQWLbEiv/6y9vCbYdqWDbKqzrZowU+ZasAzZA=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Math-BoldItalic.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ir7aGCiPc1mC8eU63hKIdo0uZZs=
+			</data>
+			<key>hash2</key>
+			<data>
+			MKNA574GM8RqsC6MeFtwoMKvlTWyBzHu9G7assuOmrk=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Math-Italic.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PM+pj61qWohcZ6+BFmTGWY5Ev2o=
+			</data>
+			<key>hash2</key>
+			<data>
+			2IZHA6Rvj4SAzlWfC0XkJ+pF3Ilsg7aWULjWmWsZImE=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_SansSerif-Bold.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			70ihQLtcOmFm2lMLLKRw2ay1kOM=
+			</data>
+			<key>hash2</key>
+			<data>
+			LhZyTMRjRTEbm7od9wMFy91afXwC+tuAEjiOO4aoBaE=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_SansSerif-Italic.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1SaCTrRWLkq0fARSaHp1Z42lFuo=
+			</data>
+			<key>hash2</key>
+			<data>
+			GB92EmGmHCrKkJUZ8QoWUOXVxFe/irJy2SGLtPaPyzs=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_SansSerif-Regular.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1ovkUgW6Fznp9olk/Wo6pFRwQkY=
+			</data>
+			<key>hash2</key>
+			<data>
+			tDzsx4L+p8H3ZePNQ0xyQjDz1CfYyP2MMhEtgpIPUZ0=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Script-Regular.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hYINNHvTTWOnApsTL7ny7uX/2nI=
+			</data>
+			<key>hash2</key>
+			<data>
+			B27KzM7clTeZCby3eugyGzyE4kasWF161IsNLdTOfqc=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Size1-Regular.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DzqKyIJ0ld1K0bZVslsJubPzr5g=
+			</data>
+			<key>hash2</key>
+			<data>
+			VdVvWpmJt1AVBg4HgKZ9B3o+OE3FPurHUPRbH8O/gNA=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Size2-Regular.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ViU/GeXQGT/5DqhLIBbhhs7HQSg=
+			</data>
+			<key>hash2</key>
+			<data>
+			ep9RyjQbqTZ9fdaJeoDH+jcWlLD6l//UREJWz4sADGg=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Size3-Regular.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZICMN4NDLicD137YvFXcJ3jQ+mQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			gq8FK2FkeKpGppCh9jN/I7Up7m/X9qWPqJOf7jHHcuQ=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Size4-Regular.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FFCzbiqpMa1vgFnFJSpvXexZX/c=
+			</data>
+			<key>hash2</key>
+			<data>
+			u1hwnda6vIgxy81xTbaakO1g2iD043v3sG5oDuAHoYA=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_math_fork/lib/katex_fonts/fonts/KaTeX_Typewriter-Regular.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HQs50swkhGUKEizNysX/ez0DRnc=
+			</data>
+			<key>hash2</key>
+			<data>
+			74u9kdMj/vHsQLwEb+HpDfxsMyYZxZ2RKok+uan86h0=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_widget_from_html/test/images/.gitkeep</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+			</data>
+			<key>hash2</key>
+			<data>
+			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/flutter_widget_from_html_core/test/images/logo.png</key>
@@ -819,37 +1131,70 @@
 			PDTh8pjQyeo0VdRttrd1nIIRpJ6exuRLY1/FyH37QYA=
 			</data>
 		</dict>
+		<key>flutter_assets/packages/fluttertoast/assets/toastify.css</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HVkEhoid+n6bwOYCwZg4DdmGBHY=
+			</data>
+			<key>hash2</key>
+			<data>
+			abr0T+pbPv0zd7q8FU7xuDv4JjuRAgKox9bnRddRNJ8=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/fluttertoast/assets/toastify.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q0Yr9JVfSBiRH22TkE46LT+KLE8=
+			</data>
+			<key>hash2</key>
+			<data>
+			mfqR+tbc9El/g4k3uPxXEF7vEx1a29TL45Ns5tQkjsE=
+			</data>
+		</dict>
 		<key>flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XbubBciGBT8afjTe1WNIfp7cCS0=
+			BV6ddA9KSAfBO+sPqqAjjvEuOdo=
 			</data>
 			<key>hash2</key>
 			<data>
-			AJeq+Z3yrgQa7M2hVceRsVXAEDnglC0co27HN5gvZ/c=
+			L78EQKL1aKdI/+yvRXWqxzjwjM+8CvD8zvtOSZx/nDU=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wRWv6zcGc5iMPwgf3ucL1uDqLkQ=
+			pBPI2simJenD86E05mXmIqcIX5g=
 			</data>
 			<key>hash2</key>
 			<data>
-			Wmp3MLkycAzju2B+a/kz/w6aYiCOvqpxpYQVGrITFRs=
+			tXGPkvTIG+T2stVc6cC7JOg9r4viX7knNAVv69z0msU=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Qfi9k9B/B7MIN4mQdgznFsDcPwY=
+			aUuKJEX/Od5BW/R5GEVEKnsbgeU=
 			</data>
 			<key>hash2</key>
 			<data>
-			47TufS3CZBMX0ANHyyfwYSDc2hENha+aR/W6KeZ0fnY=
+			P3tQxYwvmm6SheGElQzqeP8CSYuHg5LntkqugnKAlgU=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/fwfh_svg/test/images/logo.svg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			J1r337zBCTR0cFfTUjjhLkUNHMw=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ve/8vVFFfp8r/CUZTnvm/sgzaGNLM5Ex5Xi9lWQzYt4=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/wakelock_web/assets/no_sleep.js</key>
@@ -878,11 +1223,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PVqFLmX9s4tyV1YTHpe6dp/PVWU=
+			BICKLyZmEDX0yMJrQwYDz3tKwt8=
 			</data>
 			<key>hash2</key>
 			<data>
-			+gHgpOEYHGeYAtvKDiRw/YC9zBJOfsyqEN9priH9ieU=
+			dW/lW8/DGE7kqgVOIL22hio/M/WrH8+bodAoyvhyXsU=
 			</data>
 		</dict>
 	</dict>

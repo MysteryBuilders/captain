@@ -40,11 +40,14 @@ class _PaymentScreenState extends State<PaymentScreen> {
           Expanded(flex:9,child:Stack(
             children: <Widget>[
             InAppWebView(
-            initialUrl: widget.url,
-    initialHeaders: {},
+
+              initialUrlRequest:
+              URLRequest(url: Uri.parse(widget.url)),
+
+
     initialOptions: InAppWebViewGroupOptions(
     crossPlatform: InAppWebViewOptions(
-    debuggingEnabled: true,
+
         preferredContentMode: UserPreferredContentMode.MOBILE,
     userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:61.0) Gecko/20100101 Firefox/61.0"
     ),
@@ -52,13 +55,15 @@ class _PaymentScreenState extends State<PaymentScreen> {
     onWebViewCreated: (InAppWebViewController controller) {
     webView = controller;
     },
-    onLoadStart: (InAppWebViewController controller, String url) {
+
+
+    onLoadStart: (InAppWebViewController controller, Uri url) {
     isLoading = false;
     },
-    onLoadStop: (InAppWebViewController controller, String url) async {
+    onLoadStop: (InAppWebViewController controller, Uri url) async {
     isLoading = true;
     print(url);
-    if (url.contains('merchantTxnId')) {
+    if (url.toString().contains('merchantTxnId')) {
       Navigator.pushNamedAndRemoveUntil(context, Home.id, (route) => false);
 
 

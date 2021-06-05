@@ -137,7 +137,7 @@ class PhoneTextField extends StatelessWidget {
                   child: Text(
                     '+965',
                     style: GoogleFonts.cairo(
-                      fontSize: screenUtil.setSp(13,allowFontScalingSelf: true),
+                      fontSize: screenUtil.setSp(13),
                       color: const Color(0xFFFFFFFF),
                       fontWeight: FontWeight.w600,
                     ),

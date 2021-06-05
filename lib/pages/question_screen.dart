@@ -115,7 +115,7 @@ class _QuestionPlayerScreenState extends State<QuestionPlayerScreen> {
                                       widget.player.cat.name,
                                       style: TextStyle(
                                           color: Color(0xFF002087),
-                                          fontSize: screenUtil.setSp(18,allowFontScalingSelf: true),
+                                          fontSize: screenUtil.setSp(18),
                                           fontWeight: FontWeight.normal
 
 
@@ -134,7 +134,7 @@ class _QuestionPlayerScreenState extends State<QuestionPlayerScreen> {
                                     widget.player.name,
                                     style: TextStyle(
                                         color: Color(0xFF000000),
-                                        fontSize: screenUtil.setSp(18,allowFontScalingSelf: true),
+                                        fontSize: screenUtil.setSp(18),
                                         fontWeight: FontWeight.bold
 
 
@@ -157,7 +157,7 @@ class _QuestionPlayerScreenState extends State<QuestionPlayerScreen> {
                                     'إستفسار',
                                     style: TextStyle(
                                         color: Color(0xFF000000),
-                                        fontSize: screenUtil.setSp(18,allowFontScalingSelf: true),
+                                        fontSize: screenUtil.setSp(18),
                                         fontWeight: FontWeight.normal
 
 
@@ -215,7 +215,7 @@ class _QuestionPlayerScreenState extends State<QuestionPlayerScreen> {
                             child: Text(
                               'إرسال',
                               style: GoogleFonts.cairo(
-                                fontSize: screenUtil.setSp(13,allowFontScalingSelf: true),
+                                fontSize: screenUtil.setSp(13,),
                                 color: Colors.black,
                                 fontWeight: FontWeight.w700,
                               ),

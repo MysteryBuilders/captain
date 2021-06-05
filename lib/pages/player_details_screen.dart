@@ -81,7 +81,7 @@ class _PlayerDetailsScreenState extends State<PlayerDetailsScreen> {
             'تفاصيل اللاعب',
 
             style: GoogleFonts.cairo(
-              fontSize: screenUtil.setSp(18, allowFontScalingSelf: true),
+              fontSize: screenUtil.setSp(18),
               color: const Color(0xFF002087),
               letterSpacing: -0.36,
               fontWeight: FontWeight.w700,
@@ -169,7 +169,7 @@ class _PlayerDetailsScreenState extends State<PlayerDetailsScreen> {
                                   widget.player.cat.name,
                                   style: TextStyle(
                                     color: Color(0xFF002087),
-                                    fontSize: screenUtil.setSp(18,allowFontScalingSelf: true),
+                                    fontSize: screenUtil.setSp(18),
                                     fontWeight: FontWeight.normal
 
 
@@ -188,7 +188,7 @@ margin: EdgeInsets.only(bottom: 4.h),
                                 widget.player.name,
                                 style: TextStyle(
                                     color: Color(0xFF000000),
-                                    fontSize: screenUtil.setSp(18,allowFontScalingSelf: true),
+                                    fontSize: screenUtil.setSp(18),
                                     fontWeight: FontWeight.bold
 
 
@@ -221,7 +221,7 @@ margin: EdgeInsets.only(bottom: 4.h),
                                   'إستفسار',
                                   style: TextStyle(
                                       color: Color(0xFF000000),
-                                      fontSize: screenUtil.setSp(18,allowFontScalingSelf: true),
+                                      fontSize: screenUtil.setSp(18),
                                       fontWeight: FontWeight.normal
 
 
@@ -281,7 +281,7 @@ margin: EdgeInsets.only(bottom: 4.h),
                                 child:    Text('صور و فيديوهات '   ,
                                   style: TextStyle(
                                       color: Color(0xFF002087),
-                                      fontSize: screenUtil.setSp(16,allowFontScalingSelf: true),
+                                      fontSize: screenUtil.setSp(16),
                                       fontWeight: FontWeight.w600
                                   ),) ,
 
@@ -316,7 +316,7 @@ margin: EdgeInsets.only(bottom: 4.h),
                                 Text('بيانات اللاعب '   ,
                                 style: TextStyle(
                                   color: Color(0xFF002087),
-                                  fontSize: screenUtil.setSp(16,allowFontScalingSelf: true),
+                                  fontSize: screenUtil.setSp(16),
                                   fontWeight: FontWeight.w600
                                 ),) ,
 
@@ -594,7 +594,7 @@ margin: EdgeInsets.only(bottom: 4.h),
                                     Text(widget.player.championships[index].groupName,
                                     style: TextStyle(
                                       color: Color(0xFF000000),
-                                      fontSize: screenUtil.setSp(16,allowFontScalingSelf: true),
+                                      fontSize: screenUtil.setSp(16),
                                       fontWeight: FontWeight.normal
                                     ),),
 
@@ -614,7 +614,7 @@ margin: EdgeInsets.only(bottom: 4.h),
                                                 child: Text(widget.player.championships[index].year.toString(),
                                                   style: TextStyle(
                                                       color: Color(0xFF000000),
-                                                      fontSize: screenUtil.setSp(13,allowFontScalingSelf: true),
+                                                      fontSize: screenUtil.setSp(13),
                                                       fontWeight: FontWeight.w600
                                                   ),),
                                               ),
@@ -623,7 +623,7 @@ margin: EdgeInsets.only(bottom: 4.h),
                                                 child: Text(widget.player.championships[index].nameClub.toString(),
                                                   style: TextStyle(
                                                       color: Color(0xFF000000),
-                                                      fontSize: screenUtil.setSp(13,allowFontScalingSelf: true),
+                                                      fontSize: screenUtil.setSp(13),
                                                       fontWeight: FontWeight.w600
                                                   ),),
                                               ),
@@ -637,24 +637,24 @@ margin: EdgeInsets.only(bottom: 4.h),
                                                 Text(widget.player.championships[index].goal.toString(),
                                                   style: TextStyle(
                                                       color: Color(0xFF000000),
-                                                      fontSize: screenUtil.setSp(13,allowFontScalingSelf: true),
+                                                      fontSize: screenUtil.setSp(13),
                                                       fontWeight: FontWeight.w600
                                                   ),),
                                                 Text(widget.player.championships[index].goal.toString(),
                                                   style: TextStyle(
                                                       color: Color(0xFF000000),
-                                                      fontSize: screenUtil.setSp(13,allowFontScalingSelf: true),
+                                                      fontSize: screenUtil.setSp(13),
                                                       fontWeight: FontWeight.w600
                                                   ),),
                                                 Text(widget.player.championships[index].yellowCard.toString(),
                                                   style: TextStyle(
                                                       color: Color(0xFF000000),
-                                                      fontSize: screenUtil.setSp(13,allowFontScalingSelf: true),
+                                                      fontSize: screenUtil.setSp(13),
                                                       fontWeight: FontWeight.w600
                                                   ),),Text(widget.player.championships[index].redCard.toString(),
                                                   style: TextStyle(
                                                       color: Color(0xFF000000),
-                                                      fontSize: screenUtil.setSp(13,allowFontScalingSelf: true),
+                                                      fontSize: screenUtil.setSp(13),
                                                       fontWeight: FontWeight.w600
                                                   ),),
                                               ],
