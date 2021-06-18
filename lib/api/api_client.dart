@@ -240,12 +240,12 @@ class CaptinService {
 
     ProfileModel profileModel;
     var dio = Dio();
-    dio.options.headers["Authorization"] = "Bearer ${token}";
+    // dio.options.headers["Authorization"] = "Bearer ${token}";
     dio.options.contentType = 'application/json';
-    dio.options.headers[HttpHeaders.authorizationHeader] ="Bearer ${token}";
+    // dio.options.headers[HttpHeaders.authorizationHeader] ="Bearer ${token}";
 
 
-    var  response = await dio.get(TAG_BASE_URL+"profile" );
+    var  response = await dio.get(TAG_BASE_URL+"profile?token="+token );
     print(response.data);
     if(response.statusCode == 200){
 
@@ -265,13 +265,13 @@ class CaptinService {
 
     SaveTokenModel saveTokenModel;
     var dio = Dio();
-    dio.options.headers["Authorization"] = "Bearer ${token}";
+    // dio.options.headers["Authorization"] = "Bearer ${token}";
     dio.options.contentType = 'application/json';
-    dio.options.headers[HttpHeaders.authorizationHeader] ="Bearer ${token}";
+    // dio.options.headers[HttpHeaders.authorizationHeader] ="Bearer ${token}";
 
     FormData formData = new FormData.fromMap(map);
     print(formData.fields);
-    var  response = await dio.post(TAG_BASE_URL+"save-token",options: Options(contentType: 'multipart/form-data'),
+    var  response = await dio.post(TAG_BASE_URL+"save-token?token="+token,options: Options(contentType: 'multipart/form-data'),
 
         data: formData);
 
@@ -297,12 +297,12 @@ class CaptinService {
 
     NotificationModel notificationModel;
     var dio = Dio();
-    dio.options.headers["Authorization"] = "Bearer ${token}";
+    // dio.options.headers["Authorization"] = "Bearer ${token}";
     dio.options.contentType = 'application/json';
-    dio.options.headers[HttpHeaders.authorizationHeader] ="Bearer ${token}";
+    // dio.options.headers[HttpHeaders.authorizationHeader] ="Bearer ${token}";
 
 
-    var  response = await dio.get(TAG_BASE_URL+"notifications?page="+page.toString());
+    var  response = await dio.get(TAG_BASE_URL+"notifications?page="+page.toString()+"&token="+token);
 
 
     print(response.data);
@@ -329,9 +329,9 @@ class CaptinService {
     try {
       var dio = Dio();
 
-      dio.options.headers["Authorization"] = "Bearer ${token}";
+      // dio.options.headers["Authorization"] = "Bearer ${token}";
       dio.options.contentType = 'application/json';
-      dio.options.headers[HttpHeaders.authorizationHeader] = "Bearer ${token}";
+      // dio.options.headers[HttpHeaders.authorizationHeader] = "Bearer ${token}";
       String fileName = image.path
           .split('/')
           .last;
@@ -345,7 +345,7 @@ class CaptinService {
         "facebook": ""
       });
 
-      var response = await dio.post(TAG_BASE_URL + "profile", data: formData);
+      var response = await dio.post(TAG_BASE_URL + "profile?token="+token, data: formData);
       print(response.data);
       if (response.statusCode == 200) {
         resp = response.data;
@@ -406,12 +406,12 @@ class CaptinService {
     try {
       var dio = Dio();
 
-      dio.options.headers["Authorization"] = "Bearer ${token}";
+      // dio.options.headers["Authorization"] = "Bearer ${token}";
       dio.options.contentType = 'application/json';
-      dio.options.headers[HttpHeaders.authorizationHeader] = "Bearer ${token}";
+      // dio.options.headers[HttpHeaders.authorizationHeader] = "Bearer ${token}";
 
 
-      var response = await dio.post(TAG_BASE_URL + "academies/order", data: formData);
+      var response = await dio.post(TAG_BASE_URL + "academies/order?token="+token, data: formData);
       print(response.data);
       if (response.statusCode == 200) {
         orderModel = OrderModel.fromJson(Map<String, dynamic>.from(response.data));
@@ -441,9 +441,9 @@ class CaptinService {
 
     Login_model model;
     var dio = Dio();
-    dio.options.headers["Authorization"] = "Bearer ${token}";
+    // dio.options.headers["Authorization"] = "Bearer ${token}";
     dio.options.contentType = 'application/json';
-    dio.options.headers[HttpHeaders.authorizationHeader] ="Bearer ${token}";
+    // dio.options.headers[HttpHeaders.authorizationHeader] ="Bearer ${token}";
 
 
     var  response = await dio.post(TAG_BASE_URL+"refresh?token="+token);

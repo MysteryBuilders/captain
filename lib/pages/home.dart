@@ -15,6 +15,7 @@ import 'package:captain/model/main_model.dart';
 import 'package:captain/pages/academies_screen.dart';
 import 'package:captain/pages/academydetail.dart';
 import 'package:captain/pages/players_screen.dart';
+import 'package:captain/pages/webview_screen.dart';
 import 'package:captain/provider/AcademyProvider.dart';
 import 'package:captain/provider/CoachProvider.dart';
 import 'package:captain/provider/PlaygroundProvider.dart';
@@ -96,36 +97,43 @@ print(isLogin);
       height: 180,
       child: new Swiper(
         itemBuilder: (BuildContext context, int index) {
-          return Stack(
-              children: <Widget>[
-                Center(
-                  child: Container(
-                      height: 175,
-                      decoration: BoxDecoration(
-                        color: const Color(0xfff2f2f2).withOpacity(0.5),
+          return
+            GestureDetector(
+              onTap: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => WebViewScreen(url:slider[index].img,title: slider[index].content)));
 
-                        borderRadius: BorderRadius.circular(10),
+              },
+              child: Stack(
+                children: <Widget>[
+                  Center(
+                    child: Container(
+                        height: 175,
+                        decoration: BoxDecoration(
+                          color: const Color(0xfff2f2f2).withOpacity(0.5),
 
-                      ),
-                      child:
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(8.0),
-                        child: Image.network(
-                          '${imageBaseUrl}${slider[index].img}',
-                          width: MediaQuery
-                              .of(context)
-                              .size
-                              .width * 94 / 100,
-                          fit: BoxFit.fill,
+                          borderRadius: BorderRadius.circular(10),
+
                         ),
+                        child:
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(8.0),
+                          child: Image.network(
+                            '${imageBaseUrl}${slider[index].img}',
+                            width: MediaQuery
+                                .of(context)
+                                .size
+                                .width * 94 / 100,
+                            fit: BoxFit.fill,
+                          ),
 
-                      )
+                        )
 
+                    ),
                   ),
-                ),
 
-              ]
-          );
+                ]
+          ),
+            );
         },
 
         itemCount: slider.length,

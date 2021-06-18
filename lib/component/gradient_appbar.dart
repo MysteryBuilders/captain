@@ -29,7 +29,7 @@ class GradientAppBar extends StatelessWidget {
             child: InkWell(
               onTap: (){Navigator.pop(context);},
               child: Padding(padding: EdgeInsets.all(10.w),
-                  child: Icon(Icons.arrow_back_ios_outlined,size: 17.w,color: Colors.white,)
+                  child: Icon(Icons.arrow_forward_ios_outlined,size: 17.w,color: Colors.white,)
               ),
             ),
 

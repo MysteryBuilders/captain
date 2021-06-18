@@ -14,8 +14,108 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13d2e8b7-94b9-41b6-8606-44ca7fef446f" name="Default Changelist" comment="commit">
+      <change afterPath="$PROJECT_DIR$/lib/pages/webview_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/FMDB/FMDB.framework/FMDB" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/FMDB/FMDB.framework/FMDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/FirebaseCore" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/FirebaseCore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework/FirebaseCoreDiagnostics" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework/FirebaseCoreDiagnostics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/FirebaseDatabase" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/FirebaseDatabase" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/FirebaseInstallations" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/FirebaseInstallations" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/FirebaseMessaging/FirebaseMessaging.framework/FirebaseMessaging" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/FirebaseMessaging/FirebaseMessaging.framework/FirebaseMessaging" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/GoogleDataTransport/GoogleDataTransport.framework/GoogleDataTransport" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/GoogleDataTransport/GoogleDataTransport.framework/GoogleDataTransport" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/GoogleUtilities/GoogleUtilities.framework/GoogleUtilities" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/GoogleUtilities/GoogleUtilities.framework/GoogleUtilities" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Pods_Runner.framework/Pods_Runner" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Pods_Runner.framework/Pods_Runner" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Pods_Runner.framework/_CodeSignature/CodeDirectory" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Pods_Runner.framework/_CodeSignature/CodeDirectory" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Pods_Runner.framework/_CodeSignature/CodeRequirements-1" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Pods_Runner.framework/_CodeSignature/CodeRequirements-1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/FBLPromises" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/FBLPromises" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/App" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/FBLPromises.framework/FBLPromises" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/FBLPromises.framework/FBLPromises" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/FMDB.framework/FMDB" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/FMDB.framework/FMDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/GoogleUtilities.framework/GoogleUtilities" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/GoogleUtilities.framework/GoogleUtilities" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/flutter_inappwebview.framework/WebView.storyboardc/viewController.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/flutter_inappwebview.framework/WebView.storyboardc/viewController.nib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/flutter_inappwebview.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/flutter_inappwebview.framework/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/flutter_inappwebview.framework/flutter_inappwebview" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/flutter_inappwebview.framework/flutter_inappwebview" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/flutter_share.framework/flutter_share" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/flutter_share.framework/flutter_share" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/fluttertoast.framework/fluttertoast" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/fluttertoast.framework/fluttertoast" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/image_picker.framework/image_picker" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/image_picker.framework/image_picker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/in_app_review.framework/in_app_review" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/in_app_review.framework/in_app_review" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/leveldb.framework/leveldb" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/leveldb.framework/leveldb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/nanopb.framework/nanopb" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/nanopb.framework/nanopb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/path_provider.framework/path_provider" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/path_provider.framework/path_provider" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/shared_preferences.framework/shared_preferences" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/shared_preferences.framework/shared_preferences" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/sqflite.framework/sqflite" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/sqflite.framework/sqflite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/url_launcher.framework/url_launcher" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/url_launcher.framework/url_launcher" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/video_player.framework/video_player" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/video_player.framework/video_player" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/wakelock.framework/wakelock" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/wakelock.framework/wakelock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/webview_flutter.framework/webview_flutter" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/webview_flutter.framework/webview_flutter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Runner" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/firebase_core/firebase_core.framework/_CodeSignature/CodeDirectory" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/firebase_core/firebase_core.framework/_CodeSignature/CodeDirectory" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/firebase_core/firebase_core.framework/_CodeSignature/CodeRequirements-1" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/firebase_core/firebase_core.framework/_CodeSignature/CodeRequirements-1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/firebase_core/firebase_core.framework/firebase_core" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/firebase_core/firebase_core.framework/firebase_core" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/firebase_database/firebase_database.framework/_CodeSignature/CodeDirectory" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/firebase_database/firebase_database.framework/_CodeSignature/CodeDirectory" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/firebase_database/firebase_database.framework/_CodeSignature/CodeRequirements-1" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/firebase_database/firebase_database.framework/_CodeSignature/CodeRequirements-1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/firebase_database/firebase_database.framework/firebase_database" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/firebase_database/firebase_database.framework/firebase_database" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/firebase_messaging/firebase_messaging.framework/_CodeSignature/CodeDirectory" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/firebase_messaging/firebase_messaging.framework/_CodeSignature/CodeDirectory" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/firebase_messaging/firebase_messaging.framework/_CodeSignature/CodeRequirements-1" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/firebase_messaging/firebase_messaging.framework/_CodeSignature/CodeRequirements-1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/firebase_messaging/firebase_messaging.framework/firebase_messaging" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/firebase_messaging/firebase_messaging.framework/firebase_messaging" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/flutter_inappwebview/flutter_inappwebview.framework/WebView.storyboardc/viewController.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/flutter_inappwebview/flutter_inappwebview.framework/WebView.storyboardc/viewController.nib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/flutter_inappwebview/flutter_inappwebview.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/flutter_inappwebview/flutter_inappwebview.framework/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/flutter_inappwebview/flutter_inappwebview.framework/flutter_inappwebview" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/flutter_inappwebview/flutter_inappwebview.framework/flutter_inappwebview" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/flutter_share/flutter_share.framework/flutter_share" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/flutter_share/flutter_share.framework/flutter_share" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/fluttertoast/fluttertoast.framework/fluttertoast" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/fluttertoast/fluttertoast.framework/fluttertoast" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/image_picker/image_picker.framework/image_picker" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/image_picker/image_picker.framework/image_picker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/in_app_review/in_app_review.framework/in_app_review" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/in_app_review/in_app_review.framework/in_app_review" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/leveldb-library/leveldb.framework/leveldb" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/leveldb-library/leveldb.framework/leveldb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/nanopb/nanopb.framework/nanopb" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/nanopb/nanopb.framework/nanopb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/path_provider/path_provider.framework/path_provider" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/path_provider/path_provider.framework/path_provider" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/shared_preferences/shared_preferences.framework/shared_preferences" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/shared_preferences/shared_preferences.framework/shared_preferences" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/sqflite/sqflite.framework/sqflite" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/sqflite/sqflite.framework/sqflite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/url_launcher/url_launcher.framework/url_launcher" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/url_launcher/url_launcher.framework/url_launcher" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/video_player/video_player.framework/video_player" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/video_player/video_player.framework/video_player" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/wakelock/wakelock.framework/wakelock" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/wakelock/wakelock.framework/wakelock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/webview_flutter/webview_flutter.framework/webview_flutter" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/webview_flutter/webview_flutter.framework/webview_flutter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/FBLPromises.framework/FBLPromises" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/FBLPromises.framework/FBLPromises" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/FMDB.framework/FMDB" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/FMDB.framework/FMDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/GoogleUtilities.framework/GoogleUtilities" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/GoogleUtilities.framework/GoogleUtilities" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/flutter_inappwebview.framework/WebView.storyboardc/viewController.nib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/flutter_inappwebview.framework/WebView.storyboardc/viewController.nib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/flutter_inappwebview.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/flutter_inappwebview.framework/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/flutter_inappwebview.framework/flutter_inappwebview" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/flutter_inappwebview.framework/flutter_inappwebview" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/flutter_share.framework/flutter_share" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/flutter_share.framework/flutter_share" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/fluttertoast.framework/fluttertoast" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/fluttertoast.framework/fluttertoast" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/image_picker.framework/image_picker" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/image_picker.framework/image_picker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/in_app_review.framework/in_app_review" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/in_app_review.framework/in_app_review" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/leveldb.framework/leveldb" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/leveldb.framework/leveldb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/nanopb.framework/nanopb" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/nanopb.framework/nanopb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/path_provider.framework/path_provider" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/path_provider.framework/path_provider" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/shared_preferences.framework/shared_preferences" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/shared_preferences.framework/shared_preferences" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/sqflite.framework/sqflite" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/sqflite.framework/sqflite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/url_launcher.framework/url_launcher" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/url_launcher.framework/url_launcher" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/video_player.framework/video_player" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/video_player.framework/video_player" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/wakelock.framework/wakelock" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/wakelock.framework/wakelock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/webview_flutter.framework/webview_flutter" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/webview_flutter.framework/webview_flutter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Runner" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/api/api_client.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/api_client.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/component/gradient_appbar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/component/gradient_appbar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/payment_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/payment_screen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +133,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1pD2BfukfdiqreORdrri9r1UdMl" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -99,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622920211306</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit">
+      <created>1623066843875</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1623066843875</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,10 +236,6 @@
       <screen x="0" y="25" width="1792" height="1016" />
     </state>
     <state x="667" y="193" key="#com.intellij.ide.util.MemberChooser/0.25.1792.1016@0.25.1792.1016" timestamp="1615483990407" />
-    <state x="106" y="417" width="1592" height="810" key="AVDManager" timestamp="1615277045860">
-      <screen x="0" y="25" width="1792" height="1015" />
-    </state>
-    <state x="106" y="417" width="1592" height="810" key="AVDManager/0.25.1792.1015@0.25.1792.1015" timestamp="1615277045860" />
     <state x="519" y="279" key="AndroidProcessChooserDialog" timestamp="1622909682129">
       <screen x="0" y="25" width="1792" height="1013" />
     </state>
@@ -139,122 +244,74 @@
       <screen x="0" y="25" width="1792" height="1010" />
     </state>
     <state x="765" y="431" key="Github.ShareDialog/0.25.1792.1010@0.25.1792.1010" timestamp="1615919166725" />
-    <state width="679" height="260" key="GridCell.Tab.0.bottom" timestamp="1622920373571">
-      <screen x="0" y="25" width="1792" height="1017" />
+    <state width="1750" height="272" key="GridCell.Tab.0.bottom" timestamp="1624014765130">
+      <screen x="0" y="25" width="1792" height="1010" />
     </state>
-    <state width="1358" height="260" key="GridCell.Tab.0.bottom/0.25.1792.1010@0.25.1792.1010" timestamp="1622889826954" />
+    <state width="1750" height="272" key="GridCell.Tab.0.bottom/0.25.1792.1010@0.25.1792.1010" timestamp="1624014765130" />
     <state width="1358" height="421" key="GridCell.Tab.0.bottom/0.25.1792.1013@0.25.1792.1013" timestamp="1622910416331" />
     <state width="679" height="260" key="GridCell.Tab.0.bottom/0.25.1792.1015@0.25.1792.1015" timestamp="1622885125869" />
     <state width="1750" height="257" key="GridCell.Tab.0.bottom/0.25.1792.1016@0.25.1792.1016" timestamp="1615536985985" />
-    <state width="679" height="260" key="GridCell.Tab.0.bottom/0.25.1792.1017@0.25.1792.1017" timestamp="1622920373571" />
+    <state width="1358" height="272" key="GridCell.Tab.0.bottom/0.25.1792.1017@0.25.1792.1017" timestamp="1623164012647" />
     <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.25.1792.1018@0.25.1792.1018" timestamp="1615573255837" />
-    <state width="679" height="260" key="GridCell.Tab.0.bottom/0.25.1792.1019@0.25.1792.1019" timestamp="1622884373659" />
+    <state width="1358" height="272" key="GridCell.Tab.0.bottom/0.25.1792.1019@0.25.1792.1019" timestamp="1623918674617" />
     <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.25.1792.1020@0.25.1792.1020" timestamp="1615576657839" />
     <state width="1750" height="314" key="GridCell.Tab.0.bottom/0.25.1792.1021@0.25.1792.1021" timestamp="1618730479210" />
     <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.25.1792.1023@0.25.1792.1023" timestamp="1615575619741" />
-    <state width="1750" height="275" key="GridCell.Tab.0.bottom/0.25.1792.1024@0.25.1792.1024" timestamp="1614844838755" />
-    <state width="1750" height="274" key="GridCell.Tab.0.bottom/0.25.1792.1026@0.25.1792.1026" timestamp="1614856311201" />
-    <state width="875" height="278" key="GridCell.Tab.0.bottom/0.25.1792.1027@0.25.1792.1027" timestamp="1614707645295" />
-    <state width="1750" height="274" key="GridCell.Tab.0.bottom/0.25.1792.1029@0.25.1792.1029" timestamp="1614860797301" />
-    <state width="1750" height="274" key="GridCell.Tab.0.bottom/0.25.1792.1030@0.25.1792.1030" timestamp="1614889153440" />
-    <state width="1750" height="274" key="GridCell.Tab.0.bottom/0.25.1792.1033@0.25.1792.1033" timestamp="1614889320137" />
-    <state width="1750" height="274" key="GridCell.Tab.0.bottom/0.25.1792.1034@0.25.1792.1034" timestamp="1614890627651" />
-    <state width="1750" height="274" key="GridCell.Tab.0.bottom/0.25.1792.1035@0.25.1792.1035" timestamp="1614936973458" />
-    <state width="1750" height="278" key="GridCell.Tab.0.bottom/0.25.1792.1036@0.25.1792.1036" timestamp="1614953422004" />
-    <state width="1750" height="278" key="GridCell.Tab.0.bottom/0.25.1792.1037@0.25.1792.1037" timestamp="1614957545239" />
-    <state width="1750" height="230" key="GridCell.Tab.0.bottom/0.25.1792.1038@0.25.1792.1038" timestamp="1615044165125" />
-    <state width="1750" height="230" key="GridCell.Tab.0.bottom/0.25.1792.1039@0.25.1792.1039" timestamp="1615046401411" />
-    <state width="1750" height="478" key="GridCell.Tab.0.bottom/0.25.1792.1040@0.25.1792.1040" timestamp="1614978167701" />
-    <state width="679" height="260" key="GridCell.Tab.0.center" timestamp="1622920373568">
-      <screen x="0" y="25" width="1792" height="1017" />
+    <state width="1358" height="260" key="GridCell.Tab.0.bottom/0.25.1792.1026@0.25.1792.1026" timestamp="1623066862343" />
+    <state width="1750" height="272" key="GridCell.Tab.0.center" timestamp="1624014765129">
+      <screen x="0" y="25" width="1792" height="1010" />
     </state>
-    <state width="1358" height="260" key="GridCell.Tab.0.center/0.25.1792.1010@0.25.1792.1010" timestamp="1622889826953" />
+    <state width="1750" height="272" key="GridCell.Tab.0.center/0.25.1792.1010@0.25.1792.1010" timestamp="1624014765129" />
     <state width="1358" height="421" key="GridCell.Tab.0.center/0.25.1792.1013@0.25.1792.1013" timestamp="1622910416330" />
     <state width="679" height="260" key="GridCell.Tab.0.center/0.25.1792.1015@0.25.1792.1015" timestamp="1622885125868" />
     <state width="1750" height="257" key="GridCell.Tab.0.center/0.25.1792.1016@0.25.1792.1016" timestamp="1615536985985" />
-    <state width="679" height="260" key="GridCell.Tab.0.center/0.25.1792.1017@0.25.1792.1017" timestamp="1622920373568" />
+    <state width="1358" height="272" key="GridCell.Tab.0.center/0.25.1792.1017@0.25.1792.1017" timestamp="1623164012646" />
     <state width="1750" height="318" key="GridCell.Tab.0.center/0.25.1792.1018@0.25.1792.1018" timestamp="1615573255836" />
-    <state width="679" height="260" key="GridCell.Tab.0.center/0.25.1792.1019@0.25.1792.1019" timestamp="1622884373659" />
+    <state width="1358" height="272" key="GridCell.Tab.0.center/0.25.1792.1019@0.25.1792.1019" timestamp="1623918674617" />
     <state width="1750" height="318" key="GridCell.Tab.0.center/0.25.1792.1020@0.25.1792.1020" timestamp="1615576657838" />
     <state width="1750" height="314" key="GridCell.Tab.0.center/0.25.1792.1021@0.25.1792.1021" timestamp="1618730479210" />
     <state width="1750" height="318" key="GridCell.Tab.0.center/0.25.1792.1023@0.25.1792.1023" timestamp="1615575619741" />
-    <state width="1750" height="275" key="GridCell.Tab.0.center/0.25.1792.1024@0.25.1792.1024" timestamp="1614844838755" />
-    <state width="1750" height="274" key="GridCell.Tab.0.center/0.25.1792.1026@0.25.1792.1026" timestamp="1614856311201" />
-    <state width="875" height="278" key="GridCell.Tab.0.center/0.25.1792.1027@0.25.1792.1027" timestamp="1614707645294" />
-    <state width="1750" height="274" key="GridCell.Tab.0.center/0.25.1792.1029@0.25.1792.1029" timestamp="1614860797301" />
-    <state width="1750" height="274" key="GridCell.Tab.0.center/0.25.1792.1030@0.25.1792.1030" timestamp="1614889153440" />
-    <state width="1750" height="274" key="GridCell.Tab.0.center/0.25.1792.1033@0.25.1792.1033" timestamp="1614889320137" />
-    <state width="1750" height="274" key="GridCell.Tab.0.center/0.25.1792.1034@0.25.1792.1034" timestamp="1614890627650" />
-    <state width="1750" height="274" key="GridCell.Tab.0.center/0.25.1792.1035@0.25.1792.1035" timestamp="1614936973458" />
-    <state width="1750" height="278" key="GridCell.Tab.0.center/0.25.1792.1036@0.25.1792.1036" timestamp="1614953422003" />
-    <state width="1750" height="278" key="GridCell.Tab.0.center/0.25.1792.1037@0.25.1792.1037" timestamp="1614957545238" />
-    <state width="1750" height="230" key="GridCell.Tab.0.center/0.25.1792.1038@0.25.1792.1038" timestamp="1615044165124" />
-    <state width="1750" height="230" key="GridCell.Tab.0.center/0.25.1792.1039@0.25.1792.1039" timestamp="1615046401410" />
-    <state width="1750" height="478" key="GridCell.Tab.0.center/0.25.1792.1040@0.25.1792.1040" timestamp="1614978167701" />
-    <state width="679" height="260" key="GridCell.Tab.0.left" timestamp="1622920373567">
-      <screen x="0" y="25" width="1792" height="1017" />
+    <state width="1358" height="260" key="GridCell.Tab.0.center/0.25.1792.1026@0.25.1792.1026" timestamp="1623066862343" />
+    <state width="1750" height="272" key="GridCell.Tab.0.left" timestamp="1624014765128">
+      <screen x="0" y="25" width="1792" height="1010" />
     </state>
-    <state width="1358" height="260" key="GridCell.Tab.0.left/0.25.1792.1010@0.25.1792.1010" timestamp="1622889826953" />
+    <state width="1750" height="272" key="GridCell.Tab.0.left/0.25.1792.1010@0.25.1792.1010" timestamp="1624014765128" />
     <state width="1358" height="421" key="GridCell.Tab.0.left/0.25.1792.1013@0.25.1792.1013" timestamp="1622910416330" />
     <state width="679" height="260" key="GridCell.Tab.0.left/0.25.1792.1015@0.25.1792.1015" timestamp="1622885125868" />
     <state width="1750" height="257" key="GridCell.Tab.0.left/0.25.1792.1016@0.25.1792.1016" timestamp="1615536985984" />
-    <state width="679" height="260" key="GridCell.Tab.0.left/0.25.1792.1017@0.25.1792.1017" timestamp="1622920373567" />
+    <state width="1358" height="272" key="GridCell.Tab.0.left/0.25.1792.1017@0.25.1792.1017" timestamp="1623164012646" />
     <state width="1750" height="318" key="GridCell.Tab.0.left/0.25.1792.1018@0.25.1792.1018" timestamp="1615573255836" />
-    <state width="679" height="260" key="GridCell.Tab.0.left/0.25.1792.1019@0.25.1792.1019" timestamp="1622884373659" />
+    <state width="1358" height="272" key="GridCell.Tab.0.left/0.25.1792.1019@0.25.1792.1019" timestamp="1623918674617" />
     <state width="1750" height="318" key="GridCell.Tab.0.left/0.25.1792.1020@0.25.1792.1020" timestamp="1615576657838" />
     <state width="1750" height="314" key="GridCell.Tab.0.left/0.25.1792.1021@0.25.1792.1021" timestamp="1618730479209" />
     <state width="1750" height="318" key="GridCell.Tab.0.left/0.25.1792.1023@0.25.1792.1023" timestamp="1615575619741" />
-    <state width="1750" height="275" key="GridCell.Tab.0.left/0.25.1792.1024@0.25.1792.1024" timestamp="1614844838755" />
-    <state width="1750" height="274" key="GridCell.Tab.0.left/0.25.1792.1026@0.25.1792.1026" timestamp="1614856311201" />
-    <state width="875" height="278" key="GridCell.Tab.0.left/0.25.1792.1027@0.25.1792.1027" timestamp="1614707645294" />
-    <state width="1750" height="274" key="GridCell.Tab.0.left/0.25.1792.1029@0.25.1792.1029" timestamp="1614860797301" />
-    <state width="1750" height="274" key="GridCell.Tab.0.left/0.25.1792.1030@0.25.1792.1030" timestamp="1614889153439" />
-    <state width="1750" height="274" key="GridCell.Tab.0.left/0.25.1792.1033@0.25.1792.1033" timestamp="1614889320136" />
-    <state width="1750" height="274" key="GridCell.Tab.0.left/0.25.1792.1034@0.25.1792.1034" timestamp="1614890627650" />
-    <state width="1750" height="274" key="GridCell.Tab.0.left/0.25.1792.1035@0.25.1792.1035" timestamp="1614936973457" />
-    <state width="1750" height="278" key="GridCell.Tab.0.left/0.25.1792.1036@0.25.1792.1036" timestamp="1614953422003" />
-    <state width="1750" height="278" key="GridCell.Tab.0.left/0.25.1792.1037@0.25.1792.1037" timestamp="1614957545238" />
-    <state width="1750" height="230" key="GridCell.Tab.0.left/0.25.1792.1038@0.25.1792.1038" timestamp="1615044165124" />
-    <state width="1750" height="230" key="GridCell.Tab.0.left/0.25.1792.1039@0.25.1792.1039" timestamp="1615046401410" />
-    <state width="1750" height="478" key="GridCell.Tab.0.left/0.25.1792.1040@0.25.1792.1040" timestamp="1614978167700" />
-    <state width="679" height="260" key="GridCell.Tab.0.right" timestamp="1622920373571">
-      <screen x="0" y="25" width="1792" height="1017" />
+    <state width="1358" height="260" key="GridCell.Tab.0.left/0.25.1792.1026@0.25.1792.1026" timestamp="1623066862343" />
+    <state width="1750" height="272" key="GridCell.Tab.0.right" timestamp="1624014765130">
+      <screen x="0" y="25" width="1792" height="1010" />
     </state>
-    <state width="1358" height="260" key="GridCell.Tab.0.right/0.25.1792.1010@0.25.1792.1010" timestamp="1622889826954" />
+    <state width="1750" height="272" key="GridCell.Tab.0.right/0.25.1792.1010@0.25.1792.1010" timestamp="1624014765130" />
     <state width="1358" height="421" key="GridCell.Tab.0.right/0.25.1792.1013@0.25.1792.1013" timestamp="1622910416330" />
     <state width="679" height="260" key="GridCell.Tab.0.right/0.25.1792.1015@0.25.1792.1015" timestamp="1622885125869" />
     <state width="1750" height="257" key="GridCell.Tab.0.right/0.25.1792.1016@0.25.1792.1016" timestamp="1615536985985" />
-    <state width="679" height="260" key="GridCell.Tab.0.right/0.25.1792.1017@0.25.1792.1017" timestamp="1622920373571" />
+    <state width="1358" height="272" key="GridCell.Tab.0.right/0.25.1792.1017@0.25.1792.1017" timestamp="1623164012647" />
     <state width="1750" height="318" key="GridCell.Tab.0.right/0.25.1792.1018@0.25.1792.1018" timestamp="1615573255836" />
-    <state width="679" height="260" key="GridCell.Tab.0.right/0.25.1792.1019@0.25.1792.1019" timestamp="1622884373659" />
+    <state width="1358" height="272" key="GridCell.Tab.0.right/0.25.1792.1019@0.25.1792.1019" timestamp="1623918674617" />
     <state width="1750" height="318" key="GridCell.Tab.0.right/0.25.1792.1020@0.25.1792.1020" timestamp="1615576657839" />
     <state width="1750" height="314" key="GridCell.Tab.0.right/0.25.1792.1021@0.25.1792.1021" timestamp="1618730479210" />
     <state width="1750" height="318" key="GridCell.Tab.0.right/0.25.1792.1023@0.25.1792.1023" timestamp="1615575619741" />
-    <state width="1750" height="275" key="GridCell.Tab.0.right/0.25.1792.1024@0.25.1792.1024" timestamp="1614844838755" />
-    <state width="1750" height="274" key="GridCell.Tab.0.right/0.25.1792.1026@0.25.1792.1026" timestamp="1614856311201" />
-    <state width="875" height="278" key="GridCell.Tab.0.right/0.25.1792.1027@0.25.1792.1027" timestamp="1614707645295" />
-    <state width="1750" height="274" key="GridCell.Tab.0.right/0.25.1792.1029@0.25.1792.1029" timestamp="1614860797301" />
-    <state width="1750" height="274" key="GridCell.Tab.0.right/0.25.1792.1030@0.25.1792.1030" timestamp="1614889153440" />
-    <state width="1750" height="274" key="GridCell.Tab.0.right/0.25.1792.1033@0.25.1792.1033" timestamp="1614889320137" />
-    <state width="1750" height="274" key="GridCell.Tab.0.right/0.25.1792.1034@0.25.1792.1034" timestamp="1614890627651" />
-    <state width="1750" height="274" key="GridCell.Tab.0.right/0.25.1792.1035@0.25.1792.1035" timestamp="1614936973458" />
-    <state width="1750" height="278" key="GridCell.Tab.0.right/0.25.1792.1036@0.25.1792.1036" timestamp="1614953422003" />
-    <state width="1750" height="278" key="GridCell.Tab.0.right/0.25.1792.1037@0.25.1792.1037" timestamp="1614957545238" />
-    <state width="1750" height="230" key="GridCell.Tab.0.right/0.25.1792.1038@0.25.1792.1038" timestamp="1615044165125" />
-    <state width="1750" height="230" key="GridCell.Tab.0.right/0.25.1792.1039@0.25.1792.1039" timestamp="1615046401410" />
-    <state width="1750" height="478" key="GridCell.Tab.0.right/0.25.1792.1040@0.25.1792.1040" timestamp="1614978167701" />
+    <state width="1358" height="260" key="GridCell.Tab.0.right/0.25.1792.1026@0.25.1792.1026" timestamp="1623066862343" />
     <state x="636" y="173" key="SettingsEditor" timestamp="1622714195731">
       <screen x="0" y="25" width="1792" height="1015" />
     </state>
     <state x="636" y="172" key="SettingsEditor/0.25.1792.1010@0.25.1792.1010" timestamp="1615920355802" />
     <state x="636" y="173" key="SettingsEditor/0.25.1792.1015@0.25.1792.1015" timestamp="1622714195731" />
-    <state x="636" y="175" key="SettingsEditor/0.25.1792.1029@0.25.1792.1029" timestamp="1614707557941" />
-    <state x="638" y="255" key="Vcs.Push.Dialog.v2" timestamp="1622920227119">
-      <screen x="0" y="25" width="1792" height="1017" />
+    <state x="638" y="257" key="Vcs.Push.Dialog.v2" timestamp="1623066853076">
+      <screen x="0" y="25" width="1792" height="1026" />
     </state>
     <state x="638" y="253" key="Vcs.Push.Dialog.v2/0.25.1792.1010@0.25.1792.1010" timestamp="1615920119637" />
     <state x="638" y="254" key="Vcs.Push.Dialog.v2/0.25.1792.1013@0.25.1792.1013" timestamp="1615551603920" />
     <state x="638" y="255" key="Vcs.Push.Dialog.v2/0.25.1792.1017@0.25.1792.1017" timestamp="1622920227119" />
+    <state x="638" y="257" key="Vcs.Push.Dialog.v2/0.25.1792.1026@0.25.1792.1026" timestamp="1623066853076" />
     <state x="667" y="414" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1615920049012">
       <screen x="0" y="25" width="1792" height="1010" />
     </state>
@@ -263,15 +320,6 @@
       <screen x="0" y="25" width="1792" height="1015" />
     </state>
     <state x="560" y="281" key="run.anything.popup/0.25.1792.1015@0.25.1792.1015" timestamp="1622918175449" />
-    <state x="777" y="251" width="670" height="678" key="search.everywhere.popup" timestamp="1614955609563">
-      <screen x="0" y="25" width="1792" height="1036" />
-    </state>
-    <state x="777" y="251" width="670" height="676" key="search.everywhere.popup/0.25.1792.1034@0.25.1792.1034" timestamp="1614871467414" />
-    <state x="777" y="251" width="670" height="678" key="search.everywhere.popup/0.25.1792.1036@0.25.1792.1036" timestamp="1614955609563" />
-    <state x="725" y="377" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1614889313823">
-      <screen x="0" y="25" width="1792" height="1033" />
-    </state>
-    <state x="725" y="377" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.25.1792.1033@0.25.1792.1033" timestamp="1614889313823" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -340,11 +388,6 @@
           <url>file://$PROJECT_DIR$/lib/component/phone_texfield.dart</url>
           <line>48</line>
           <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/pages/payment_screen.dart</url>
-          <line>63</line>
-          <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/pages/orderdata.dart</url>
