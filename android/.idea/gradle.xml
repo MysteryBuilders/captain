@@ -12,7 +12,7 @@
             <option value="$USER_HOME$/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_database-7.1.0/android" />
             <option value="$USER_HOME$/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_messaging-10.0.1/android" />
             <option value="$USER_HOME$/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_inappwebview-5.3.2/android" />
-            <option value="$USER_HOME$/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-6.0.0/android" />
+            <option value="$USER_HOME$/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-5.0.0+4/android" />
             <option value="$USER_HOME$/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-2.0.2/android" />
             <option value="$USER_HOME$/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_share-2.0.0/android" />
             <option value="$USER_HOME$/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-8.0.7/android" />
@@ -23,7 +23,7 @@
             <option value="$USER_HOME$/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-2.0.0+3/android" />
             <option value="$USER_HOME$/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-6.0.6/android" />
             <option value="$USER_HOME$/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/video_player-2.1.5/android" />
-            <option value="$USER_HOME$/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/wakelock-0.5.2/android" />
+            <option value="$USER_HOME$/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/wakelock-0.4.0/android" />
             <option value="$USER_HOME$/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/webview_flutter-2.0.8/android" />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />

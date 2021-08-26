@@ -771,62 +771,50 @@ class City {
 /// deleted_at : null
 
 class Slides {
-  int _id;
-  String _img;
-  String _content;
-  String _type;
-  String _createdAt;
-  String _updatedAt;
-  dynamic _deletedAt;
+  int id;
+  String img;
+  String content;
+  String url;
+  String type;
+  String createdAt;
+  String updatedAt;
+  Null deletedAt;
 
-  int get id => _id;
-  String get img => _img;
-  String get content => _content;
-  String get type => _type;
-  String get createdAt => _createdAt;
-  String get updatedAt => _updatedAt;
-  dynamic get deletedAt => _deletedAt;
+  Slides(
+      {this.id,
+        this.img,
+        this.content,
+        this.url,
+        this.type,
+        this.createdAt,
+        this.updatedAt,
+        this.deletedAt});
 
-  Slides({
-      int id, 
-      String img, 
-      String content, 
-      String type, 
-      String createdAt, 
-      String updatedAt, 
-      dynamic deletedAt}){
-    _id = id;
-    _img = img;
-    _content = content;
-    _type = type;
-    _createdAt = createdAt;
-    _updatedAt = updatedAt;
-    _deletedAt = deletedAt;
-}
-
-  Slides.fromJson(dynamic json) {
-    _id = json["id"];
-    _img = json["img"];
-    _content = json["content"];
-    _type = json["type"];
-    _createdAt = json["created_at"];
-    _updatedAt = json["updated_at"];
-    _deletedAt = json["deleted_at"];
+  Slides.fromJson(Map<String, dynamic> json) {
+    id = json['id'];
+    img = json['img'];
+    content = json['content'];
+    url = json['url'];
+    type = json['type'];
+    createdAt = json['created_at'];
+    updatedAt = json['updated_at'];
+    deletedAt = json['deleted_at'];
   }
 
   Map<String, dynamic> toJson() {
-    var map = <String, dynamic>{};
-    map["id"] = _id;
-    map["img"] = _img;
-    map["content"] = _content;
-    map["type"] = _type;
-    map["created_at"] = _createdAt;
-    map["updated_at"] = _updatedAt;
-    map["deleted_at"] = _deletedAt;
-    return map;
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['id'] = this.id;
+    data['img'] = this.img;
+    data['content'] = this.content;
+    data['url'] = this.url;
+    data['type'] = this.type;
+    data['created_at'] = this.createdAt;
+    data['updated_at'] = this.updatedAt;
+    data['deleted_at'] = this.deletedAt;
+    return data;
   }
-
 }
+
 
 /// id : 2
 /// name : "السباحة"
@@ -961,43 +949,52 @@ class Cities {
 class Settings {
   int _id;
   String _logo;
-  String _facebook;
+  dynamic _facebook;
   String _instagram;
-  String _whatsapp;
+  dynamic _whatsapp;
   String _snapchot;
   String _email;
   String _phone;
   String _aboutUs;
+  int _brothersPercentage;
   dynamic _createdAt;
   String _updatedAt;
-  int _brothersPercentage;
+  dynamic _snapchat;
+  dynamic _youtube;
+  dynamic _twitter;
 
   int get id => _id;
   String get logo => _logo;
-  String get facebook => _facebook;
+  dynamic get facebook => _facebook;
   String get instagram => _instagram;
-  String get whatsapp => _whatsapp;
+  dynamic get whatsapp => _whatsapp;
   String get snapchot => _snapchot;
   String get email => _email;
   String get phone => _phone;
   String get aboutUs => _aboutUs;
+  int get brothersPercentage => _brothersPercentage;
   dynamic get createdAt => _createdAt;
   String get updatedAt => _updatedAt;
-  int get brothersPercentage =>_brothersPercentage;
+  dynamic get snapchat => _snapchat;
+  dynamic get youtube => _youtube;
+  dynamic get twitter => _twitter;
 
   Settings({
-      int id, 
-      String logo, 
-      String facebook, 
-      String instagram, 
-      String whatsapp, 
-      String snapchot, 
-      String email, 
-      String phone, 
-      String aboutUs, 
-      dynamic createdAt,
+    int id,
+    String logo,
+    dynamic facebook,
+    String instagram,
+    dynamic whatsapp,
+    String snapchot,
+    String email,
+    String phone,
+    String aboutUs,
     int brothersPercentage,
-      String updatedAt}){
+    dynamic createdAt,
+    String updatedAt,
+    dynamic snapchat,
+    dynamic youtube,
+    dynamic twitter}){
     _id = id;
     _logo = logo;
     _facebook = facebook;
@@ -1007,10 +1004,13 @@ class Settings {
     _email = email;
     _phone = phone;
     _aboutUs = aboutUs;
+    _brothersPercentage = brothersPercentage;
     _createdAt = createdAt;
     _updatedAt = updatedAt;
-    _brothersPercentage = brothersPercentage;
-}
+    _snapchat = snapchat;
+    _youtube = youtube;
+    _twitter = twitter;
+  }
 
   Settings.fromJson(dynamic json) {
     _id = json["id"];
@@ -1022,9 +1022,12 @@ class Settings {
     _email = json["email"];
     _phone = json["phone"];
     _aboutUs = json["about_us"];
+    _brothersPercentage = json["brothers_percentage"];
     _createdAt = json["created_at"];
     _updatedAt = json["updated_at"];
-    _brothersPercentage = json["brothers_percentage"];
+    _snapchat = json["snapchat"];
+    _youtube = json["youtube"];
+    _twitter = json["twitter"];
   }
 
   Map<String, dynamic> toJson() {
@@ -1038,9 +1041,12 @@ class Settings {
     map["email"] = _email;
     map["phone"] = _phone;
     map["about_us"] = _aboutUs;
+    map["brothers_percentage"] = _brothersPercentage;
     map["created_at"] = _createdAt;
     map["updated_at"] = _updatedAt;
-    map['brothers_percentage']= _brothersPercentage;
+    map["snapchat"] = _snapchat;
+    map["youtube"] = _youtube;
+    map["twitter"] = _twitter;
     return map;
   }
 

@@ -538,60 +538,123 @@ readProfile();
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            GestureDetector(
-                              onTap: (){
-                                Navigator.of(context).push(MaterialPageRoute(builder: (context) => WebSiteScreen(url: widget.settings.facebook,title: 'تويتر',)));
+                            Container(
+                              child:widget.settings.twitter.toString() == "null"?
+                                  Container():
+                              GestureDetector(
+                                onTap: (){
+
+                                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => WebSiteScreen(url: widget.settings.twitter,title: 'تويتر',)));
 
 
-                              },
-                              child: Container(
-                                alignment: Alignment(0.04, 0.01),
-                                width: 37.0,
-                                height: 32.0,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  color: Colors.white,
-                                ),
-                                child: Center(
-                                  child: Image.asset('images/twitter.png'),
-                                ),
-                              ),
-                            ),
-                            GestureDetector(
-                              onTap: (){
-                                Navigator.of(context).push(MaterialPageRoute(builder: (context) => WebSiteScreen(url: widget.settings.instagram,title: 'انستقرام',)));
+                                },
+                                child: Container(
+                                  alignment: Alignment(0.04, 0.01),
+                                  width: 37.0,
+                                  height: 32.0,
 
-
-                              },
-                              child: Container(
-                                alignment: Alignment(0.04, 0.01),
-                                width: 37.0,
-                                height: 32.0,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  color: Colors.white,
-                                ),
-                                child: Center(
-                                  child: Image.asset('images/instagram.png'),
+                                  child: Center(
+                                    child: Image.asset('images/twitter.png'),
+                                  ),
                                 ),
                               ),
                             ),
-                            GestureDetector(
-                              onTap: (){
-                                Navigator.of(context).push(MaterialPageRoute(builder: (context) => WebSiteScreen(url: widget.settings.facebook,title: 'فيس بوك',)));
+                            Container(
+                              child:widget.settings.instagram.toString() == "null"?
+                              Container():
+                              GestureDetector(
+                                onTap: (){
+                                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => WebSiteScreen(url: widget.settings.instagram,title: 'انستقرام',)));
 
 
-                              },
-                              child: Container(
-                                alignment: Alignment(0.04, 0.01),
-                                width: 37.0,
-                                height: 32.0,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  color: Colors.white,
+                                },
+                                child: Container(
+                                  alignment: Alignment(0.04, 0.01),
+                                  width: 37.0,
+                                  height: 32.0,
+
+                                  child: Center(
+                                    child: Image.asset('images/instagram.png'),
+                                  ),
                                 ),
-                                child: Center(
-                                  child: Image.asset('images/facebook.png'),
+                              ),
+                            ),
+                            Container(
+                              child: widget.settings.facebook.toString() == "null"?
+                              Container():
+                              GestureDetector(
+                                onTap: (){
+                                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => WebSiteScreen(url: widget.settings.facebook,title: 'فيس بوك',)));
+
+
+                                },
+                                child: Container(
+                                  alignment: Alignment(0.04, 0.01),
+                                  width: 37.0,
+                                  height: 32.0,
+
+                                  child: Center(
+                                    child: Image.asset('images/facebook.png'),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Container(
+                              child: widget.settings.snapchat.toString() == "null"?
+                              Container():
+                              GestureDetector(
+                                onTap: (){
+                                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => WebSiteScreen(url: widget.settings.snapchot,title: 'سناب شات',)));
+
+
+                                },
+                                child: Container(
+                                  alignment: Alignment(0.04, 0.01),
+                                  width: 37.0,
+                                  height: 32.0,
+
+                                  child: Center(
+                                    child: Image.asset('images/snapchat.png'),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Container(
+                              child: widget.settings.youtube.toString() == "null"?
+                              Container():
+                              GestureDetector(
+                                onTap: (){
+                                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => WebSiteScreen(url: widget.settings.youtube,title: 'يوتيوب',)));
+
+
+                                },
+                                child: Container(
+                                  alignment: Alignment(0.04, 0.01),
+                                  width: 37.0,
+                                  height: 32.0,
+
+                                  child: Center(
+                                    child: Image.asset('images/youtube.png'),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Container(
+                              child: widget.settings.whatsapp.toString() == "null"?
+                              Container():
+                              GestureDetector(
+                                onTap: (){
+                                  _openUrl(url(widget.settings.whatsapp, ""));
+
+                                },
+                                child: Container(
+                                  alignment: Alignment(0.04, 0.01),
+                                  width: 37.0,
+                                  height: 32.0,
+
+                                  child: Center(
+                                    child: Image.asset('images/whatsapp.png'),
+                                  ),
                                 ),
                               ),
                             ),
@@ -689,5 +752,20 @@ readProfile();
 
     }
   }
-
+  String url(String phone,String message) {
+    if (Platform.isAndroid) {
+      // add the [https]
+      return "https://wa.me/$phone/?text=+${Uri.parse(message)}"; // new line
+    } else {
+      // add the [https]
+      return "https://api.whatsapp.com/send?phone=+$phone=${Uri.parse(message)}"; // new line
+    }
+  }
+  Future<void> _openUrl(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }

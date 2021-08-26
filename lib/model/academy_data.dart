@@ -9,6 +9,10 @@ class Data {
   int _priceN;
   int _catId;
   int _cityId;
+  double _lat;
+  double _lng;
+  int _phone;
+
   String _gender;
   dynamic _deletedAt;
   String _createdAt;
@@ -18,11 +22,14 @@ class Data {
   List<Images> _images;
 
   int get id => _id;
+  int get phone =>_phone;
   String get name => _name;
   String get img => _img;
   String get address => _address;
   String get timeWork => _timeWork;
   String get content => _content;
+  double get lat =>_lat;
+  double get lng =>_lng;
   int get price => _price;
   int get priceN => _priceN;
   int get catId => _catId;
@@ -52,9 +59,15 @@ class Data {
     String updatedAt,
     Cat cat,
     City city,
-    List<Images> images}){
+    List<Images> images,
+  double lat,
+  double lng,
+  int phone}){
     _id = id;
+    _phone = phone;
     _name = name;
+    _lat = lat;
+    _lng = lng;
     _img = img;
     _address = address;
     _timeWork = timeWork;
@@ -74,8 +87,11 @@ class Data {
 
   Data.fromJson(dynamic json) {
     _id = json["id"];
+    _phone =json['phone'];
     _name = json["name"];
     _img = json["img"];
+    _lat = json['lat'];
+    _lng =json['lng'];
     _address = json["address"];
     _timeWork = json["time_work"];
     _content = json["content"];
@@ -100,6 +116,9 @@ class Data {
   Map<String, dynamic> toJson() {
     var map = <String, dynamic>{};
     map["id"] = _id;
+    map['phone']=_phone;
+    map['lat']=_lat;
+    map['lng'] =_lng;
     map["name"] = _name;
     map["img"] = _img;
     map["address"] = _address;

@@ -39,8 +39,8 @@ class _RegisterState extends State<Register> {
     }
     String name = _nameController.text;
     String password = _passwordController.text;
-    String  email =_emailController.text.trim().toLowerCase();
-    String phone = _phoneController.text.trim().toLowerCase();
+    String  email =_emailController.text.trim();
+    String phone = _phoneController.text.trim();
     if(name.trim().isEmpty || password.trim().isEmpty || !Utilities.validateEmail(email)||!Utilities.validateMobile(phone)){
       _scaffoldKey.currentState.showSnackBar(SnackBar(content: Text('من فضلك تحقق من البيانات الخاصة بك')));
     }else {

@@ -1,6 +1,7 @@
 
 
 import 'dart:async';
+import 'dart:convert';
 
 import 'package:captain/api/api_client.dart';
 import 'package:captain/helpers/constants.dart';
@@ -33,15 +34,16 @@ class Splash extends StatefulWidget {
   _SplashState createState() => _SplashState();
 }
 String mToken="";
-String mIsLog ;
+String mIsLog  ="1";
 bool isLoggedIn = false;
 Login_model login_model;
 class _SplashState extends State<Splash> {
+  var _firebaseMessaging =FirebaseMessaging.instance;
 @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    final _firebaseMessaging =FirebaseMessaging.instance;
+
 
     // _firebaseMessaging.configure(
     //   onMessage: (Map<String, dynamic> message) async {
@@ -66,68 +68,80 @@ class _SplashState extends State<Splash> {
     //
     //
     getFireBaseToken().then((value){
-      mToken = value[kSaveFireBaseToken];
-      isLoggedIn = value[kKeepMeLoggedIn];
-      print(isLoggedIn);
+      mIsLog =value;
+      print('mIsLog ${mIsLog}');
+      if(value =="0"){
 
-      if(mToken == null || mToken == ""){
-        _firebaseMessaging.getToken().then((value) {
-          mToken = value;
-          print(value);
-
-
-
-
-        }
-        ).whenComplete((){
-          saveFireBaseToken(mToken).then((value){
-            setState(() {
-
-              if(isLoggedIn){
-                mIsLog = "1";
-                refreshToken().then((value) {
-                  saveUser(value).then((value){
-                    if(value){
-                      Navigator.of(context).pushReplacementNamed(Home.id);
-                    }
-
-                  });
-
-                });
-
-              }else{
-                mIsLog = "0";
-              }
-
-            });
-
-          });
-        });
       }else{
-        setState(() {
-
-          if(isLoggedIn){
-            mIsLog = "1";
-         refreshToken().then((value) {
-           login_model = value;
-           saveUser(value).then((value){
-
-             if(value){
-               Navigator.of(context).pushReplacementNamed(Home.id);
-             }
-
-           });
-
-         });
-
-          }else{
-            mIsLog = "0";
-          }
-
-        });
+        Navigator.of(context).pushReplacementNamed(Home.id);
       }
-    });
+      setState(() {
 
+      });
+    });
+    // getFireBaseToken().then((value){
+    //   mToken = value[kSaveFireBaseToken];
+    //   isLoggedIn = value[kKeepMeLoggedIn];
+    //   print(isLoggedIn);
+    //
+    //   if(mToken == null || mToken == ""){
+    //     _firebaseMessaging.getToken().then((value) {
+    //       mToken = value;
+    //       print(value);
+    //
+    //
+    //
+    //
+    //     }
+    //     ).whenComplete((){
+    //       saveFireBaseToken(mToken).then((value){
+    //         setState(() {
+    //
+    //           if(isLoggedIn){
+    //             mIsLog = "1";
+    //             refreshToken().then((value) {
+    //               saveUser(value).then((value){
+    //                 if(value){
+    //                   Navigator.of(context).pushReplacementNamed(Home.id);
+    //                 }
+    //
+    //               });
+    //
+    //             });
+    //
+    //           }else{
+    //             mIsLog = "0";
+    //           }
+    //
+    //         });
+    //
+    //       });
+    //     });
+    //   }else{
+    //     setState(() {
+    //
+    //       if(isLoggedIn){
+    //         mIsLog = "1";
+    //      refreshToken().then((value) {
+    //        login_model = value;
+    //        saveUser(value).then((value){
+    //
+    //          if(value){
+    //            Navigator.of(context).pushReplacementNamed(Home.id);
+    //          }
+    //
+    //        });
+    //
+    //      });
+    //
+    //       }else{
+    //         mIsLog = "0";
+    //       }
+    //
+    //     });
+    //   }
+    // });
+    //
 
 
   }
@@ -143,14 +157,49 @@ class _SplashState extends State<Splash> {
 
 
   }
-  Future<Map> getFireBaseToken() async{
-  SharedPref sharedPref = SharedPref();
-  String mToken = await sharedPref.readString(kSaveFireBaseToken);
-  bool isLogin = await sharedPref.readBool(kKeepMeLoggedIn);
-  Map map = Map();
-  map[kKeepMeLoggedIn]= isLogin;
-  map[kSaveFireBaseToken]= mToken;
-  return map;
+  Future<String> getFireBaseToken() async{
+  String isLoggeIn ="0";
+  SharedPreferences sharedPref = await SharedPreferences.getInstance();
+   mToken =  sharedPref.getString(kSaveFireBaseToken)??"";
+  bool isLogin =  sharedPref.getBool(kKeepMeLoggedIn)??false;
+  if(mToken == null || mToken == ""){
+    mToken  = await  _firebaseMessaging.getToken();
+     sharedPref.setString(kSaveFireBaseToken, mToken);
+    if(isLogin){
+
+      CaptinService captinService = CaptinService();
+       login_model = await captinService.refreshToke();
+      sharedPref.setString(kUser, json.encode(login_model));
+
+
+      isLoggeIn = "1";
+    }else{
+      isLoggeIn = "0";
+    }
+
+
+  }else{
+    if(isLogin){
+      CaptinService captinService = CaptinService();
+      SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+      String email = sharedPreferences.getString("email");
+      String password = sharedPreferences.getString(kUserPassword);
+      print(email);
+
+      Map<String,dynamic> response = await captinService.login(email, password);
+      login_model = Login_model.fromJson(response);
+      sharedPref.setString(kUser, json.encode(login_model));
+      isLoggeIn = "1";
+    }else{
+      isLoggeIn = "0";
+    }
+
+  }
+  return isLoggeIn;
+  // Map map = Map();
+  // map[kKeepMeLoggedIn]= isLogin;
+  // map[kSaveFireBaseToken]= mToken;
+  // return map;
   }
   Future<bool> isLogIn()async{
     SharedPref sharedPref = SharedPref();
@@ -214,7 +263,7 @@ ScreenUtil screenUtil = ScreenUtil();
               )),
           Expanded( flex:2,
               child:
-              mIsLog == null?Container():
+
               mIsLog == "0"?
               Container(
                 height: 90.h,
@@ -306,12 +355,7 @@ ScreenUtil screenUtil = ScreenUtil();
                     ),
                   ],
                 ),
-              ): login_model == null?
-              Container(
-                height: 90,
-                child: CircularProgressIndicator(),
-                alignment: FractionalOffset.center,
-              ): Container(
+              ):  Container(
                 height: 90,
 
               )

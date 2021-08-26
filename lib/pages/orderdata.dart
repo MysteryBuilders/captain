@@ -310,7 +310,7 @@ return nAlertDialog;
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: <Widget>[
                                         Text(
-                                          'اختر عدد الملابس',
+                                          ' عدد الملابس',
                                           style: GoogleFonts.cairo(
                                             fontSize: 17.0,
                                             color: Color(0xFF002087),
@@ -332,23 +332,26 @@ return nAlertDialog;
                                             }
 
                                           },
-                                          child:  Container(
-                                              alignment: Alignment.center,
-                                              width: 26.0,
-                                              height: 26.0,
-                                              decoration: BoxDecoration(
-                                                shape: BoxShape.circle,
-                                                color: Colors.white,
-                                              ),
-                                              child: Icon(Icons.remove,color: const Color(0xFF002087),size: 18,)
+                                          child:  Opacity(
+                                            opacity: 0.0,
+                                            child: Container(
+                                                alignment: Alignment.center,
+                                                width: 26.0,
+                                                height: 26.0,
+                                                decoration: BoxDecoration(
+                                                  shape: BoxShape.circle,
+                                                  color: Colors.white,
+                                                ),
+                                                child: Icon(Icons.remove,color: const Color(0xFF002087),size: 18,)
+                                            ),
                                           ),
                                         ),
 
                                         Text(
                                           '${counts[index]}',
                                           style: GoogleFonts.cairo(
-                                            fontSize: 20.0,
-                                            color: Colors.white,
+                                            fontSize: 24.0,
+                                            color: Color(0xFF002087),
                                             letterSpacing: -0.4,
                                             fontWeight: FontWeight.w700,
                                             height: 1.15,
@@ -364,15 +367,18 @@ return nAlertDialog;
 
                                             });
                                           },
-                                          child: Container(
-                                              alignment: Alignment.center,
-                                              width: 26.0,
-                                              height: 26.0,
-                                              decoration: BoxDecoration(
-                                                shape: BoxShape.circle,
-                                                color: Colors.white,
-                                              ),
-                                              child: Icon(Icons.add,color: const Color(0xFF002087),size: 18,)
+                                          child: Opacity(
+                                            opacity: 0.0,
+                                            child: Container(
+                                                alignment: Alignment.center,
+                                                width: 26.0,
+                                                height: 26.0,
+                                                decoration: BoxDecoration(
+                                                  shape: BoxShape.circle,
+                                                  color: Colors.white,
+                                                ),
+                                                child: Icon(Icons.add,color: const Color(0xFF002087),size: 18,)
+                                            ),
                                           ),
                                         ),
 
@@ -516,7 +522,7 @@ return nAlertDialog;
               ,SizedBox(height: 10.h,),
               Container(
                 margin: EdgeInsets.all(10.w),
-                height: 440.h,
+                height: 360.h,
                 width: width,
                 child:
 
@@ -633,26 +639,7 @@ return nAlertDialog;
                               },
                               ),
                             )),
-                        Expanded(flex: 2,
-                            child:  Container(
 
-
-                              margin:
-
-                              EdgeInsets.only(bottom: 4.h,right: 40.w,left: 40.h),
-                              child:
-                              Text("سيتم اعتماد سعر المساهم في حالة إدخال رقم صندوق"
-                              "وسيتم تدقيق الطلب من المسؤول وفي حالة عدم تطابق البيانات سيعتبر الطلب غير مفعل",
-                                style: TextStyle(
-                                  color: Color(0xFFFF0000),
-                                  fontSize: screenUtil.setSp(11),
-                                  fontWeight: FontWeight.normal
-                                ),
-                              )
-
-
-                              ,
-                            )),
                         Expanded(flex: 1,
                             child:
 

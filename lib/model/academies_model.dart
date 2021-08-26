@@ -380,59 +380,46 @@ class Cat {
 /// deleted_at : null
 
 class Slides {
-  int _id;
-  String _img;
-  String _content;
-  String _type;
-  String _createdAt;
-  String _updatedAt;
-  dynamic _deletedAt;
+  int id;
+  String img;
+  String content;
+  String url;
+  String type;
+  String createdAt;
+  String updatedAt;
+  Null deletedAt;
 
-  int get id => _id;
-  String get img => _img;
-  String get content => _content;
-  String get type => _type;
-  String get createdAt => _createdAt;
-  String get updatedAt => _updatedAt;
-  dynamic get deletedAt => _deletedAt;
+  Slides(
+      {this.id,
+        this.img,
+        this.content,
+        this.url,
+        this.type,
+        this.createdAt,
+        this.updatedAt,
+        this.deletedAt});
 
-  Slides({
-      int id, 
-      String img, 
-      String content, 
-      String type, 
-      String createdAt, 
-      String updatedAt, 
-      dynamic deletedAt}){
-    _id = id;
-    _img = img;
-    _content = content;
-    _type = type;
-    _createdAt = createdAt;
-    _updatedAt = updatedAt;
-    _deletedAt = deletedAt;
-}
-
-  Slides.fromJson(dynamic json) {
-    _id = json["id"];
-    _img = json["img"];
-    _content = json["content"];
-    _type = json["type"];
-    _createdAt = json["created_at"];
-    _updatedAt = json["updated_at"];
-    _deletedAt = json["deleted_at"];
+  Slides.fromJson(Map<String, dynamic> json) {
+    id = json['id'];
+    img = json['img'];
+    content = json['content'];
+    url = json['url'];
+    type = json['type'];
+    createdAt = json['created_at'];
+    updatedAt = json['updated_at'];
+    deletedAt = json['deleted_at'];
   }
 
   Map<String, dynamic> toJson() {
-    var map = <String, dynamic>{};
-    map["id"] = _id;
-    map["img"] = _img;
-    map["content"] = _content;
-    map["type"] = _type;
-    map["created_at"] = _createdAt;
-    map["updated_at"] = _updatedAt;
-    map["deleted_at"] = _deletedAt;
-    return map;
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['id'] = this.id;
+    data['img'] = this.img;
+    data['content'] = this.content;
+    data['url'] = this.url;
+    data['type'] = this.type;
+    data['created_at'] = this.createdAt;
+    data['updated_at'] = this.updatedAt;
+    data['deleted_at'] = this.deletedAt;
+    return data;
   }
-
 }

@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:captain/component/common/AppBar.dart';
 import 'package:captain/controller/AcademyController.dart';
 import 'package:captain/helpers/constants.dart';
@@ -8,13 +9,21 @@ import 'package:captain/model/academy_data.dart';
 
 import 'package:captain/model/main_model.dart';
 import 'package:captain/pages/orderdata.dart';
+import 'package:captain/pages/photo_screen.dart';
+import 'package:captain/pages/webview_screen.dart';
 import 'package:captain/provider/AcademyProvider.dart';
+import 'package:captain/provider/call_services.dart';
+import 'package:captain/provider/service_locator.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class AcademyDetail extends StatefulWidget {
   Data mAcademy;
@@ -31,7 +40,9 @@ int count = 1;
 SharedPref sharedPref = SharedPref();
 String mBaseImageUrl ="";
 bool isloggedIn = false;
-
+int _current =0;
+final CarouselController _controller = CarouselController();
+final CallsAndMessagesService _service = locator<CallsAndMessagesService>();
 
 @override
 void initState() {
@@ -56,7 +67,10 @@ Future<Map> getDefaultPathUrl() async{
   map[kKeepMeLoggedIn] = isLoggedIn;
 return  map;
 }
+ScreenUtil screenUtil = ScreenUtil();
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     return Scaffold(
         appBar: PreferredSize(
             child:  app_bar(title: 'تفاصيل الأكاديمية',),
@@ -77,7 +91,7 @@ return  map;
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Text(
-                      'اختر عدد الأطفال',
+                      'اختر عدد اللاعبين',
                       style: GoogleFonts.cairo(
                         fontSize: 17.0,
                         color: Colors.white,
@@ -188,46 +202,162 @@ return  map;
               Padding(padding: EdgeInsets.symmetric(horizontal: 14),
                 child: Container(
                   height: 180,
-                  child: new Swiper(
-                    itemBuilder: (BuildContext context, int index) {
-                      return Stack(
-                          children: <Widget>[
-                            Center(
-                              child: Container(
-                                  height: 175,
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xfff2f2f2).withOpacity(0.5),
+                  child:   CarouselSlider(
 
-                                    borderRadius: BorderRadius.circular(10),
+                    carouselController: _controller,
+                    options: CarouselOptions(
+                        autoPlay: true,
+                        autoPlayInterval: Duration(seconds: 10),
 
-                                  ),
-                                  child:
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(8.0),
-                                    child: Image.network(
-                                      "${mBaseImageUrl}${widget.mAcademy.images[index].img}",
-                                      width: MediaQuery
-                                          .of(context)
-                                          .size
-                                          .width * 94 / 100,
-                                      fit: BoxFit.fill,
+
+
+                        height: double.infinity,
+                        viewportFraction: 1.0,
+                        enlargeCenterPage: false,
+                        disableCenter: true,
+                        pauseAutoPlayOnTouch: true
+                        ,
+
+
+
+
+                        onPageChanged: (index, reason) {
+                          setState(() {
+                            _current = index;
+                          });
+                        }
+                    ),
+                    items: widget.mAcademy.images.map((item) =>
+                        Stack(
+
+                          children: [
+                            GestureDetector(
+                              onTap: (){
+                                Navigator.of(context,rootNavigator: true).push(new MaterialPageRoute(builder: (BuildContext context){
+                                  return new PhotoScreen(imageProvider: NetworkImage(
+                                    '${mBaseImageUrl}${item.img}',
+                                  ),);
+                                }));
+
+                              },
+
+
+                              child:
+                              Column(
+                                children: [
+
+                                  Expanded(
+                                    flex:4,
+                                    child: Container(
+                                      width: width,
+
+                                      child:
+                                      CachedNetworkImage(
+                                        width: width,
+
+                                        fit: BoxFit.fill,
+                                        imageUrl:'${mBaseImageUrl}${item.img}',
+                                        imageBuilder: (context, imageProvider) => Container(
+                                            width: width,
+
+
+                                            decoration: BoxDecoration(
+
+
+
+                                              image: DecorationImage(
+
+
+                                                  fit: BoxFit.fill,
+                                                  image: imageProvider),
+                                            )
+                                        ),
+                                        placeholder: (context, url) =>
+                                            Column(
+                                              children: [
+                                                Expanded(
+                                                  flex: 9,
+                                                  child: Container(
+                                                    height: height,
+                                                    width: width,
+
+
+                                                    alignment: FractionalOffset.center,
+                                                    child: SizedBox(
+                                                        height: 50.h,
+                                                        width: 50.h,
+                                                        child: new CircularProgressIndicator()),
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+
+
+                                        errorWidget: (context, url, error) => Container(
+                                            height: height,
+                                            width: width,
+                                            alignment: FractionalOffset.center,
+                                            child: Icon(Icons.image_not_supported)),
+
+                                      ),
+                                      // Image.network(
+                                      //
+                                      //
+                                      // '${kBaseUrl}${mAdsPhoto}${item.photo}'  , fit: BoxFit.fitWidth,
+                                      //   height: 600.h,),
                                     ),
+                                  ),
 
-                                  )
-
+                                ],
                               ),
                             ),
 
-                          ]
-                      );
-                    },
+                          ] ,
+                        )).toList(),
 
-                    itemCount:  widget.mAcademy.images.length,
-                    itemWidth: MediaQuery
-                        .of(context)
-                        .size
-                        .width * 93 / 100,
                   ),
+
+                  // new Swiper(
+                  //   itemBuilder: (BuildContext context, int index) {
+                  //     return
+                  //       Stack(
+                  //         children: <Widget>[
+                  //           Center(
+                  //             child: Container(
+                  //                 height: 175,
+                  //                 decoration: BoxDecoration(
+                  //                   color: const Color(0xfff2f2f2).withOpacity(0.5),
+                  //
+                  //                   borderRadius: BorderRadius.circular(10),
+                  //
+                  //                 ),
+                  //                 child:
+                  //                 ClipRRect(
+                  //                   borderRadius: BorderRadius.circular(8.0),
+                  //                   child: Image.network(
+                  //                     "${mBaseImageUrl}${widget.mAcademy.images[index].img}",
+                  //                     width: MediaQuery
+                  //                         .of(context)
+                  //                         .size
+                  //                         .width * 94 / 100,
+                  //                     fit: BoxFit.fill,
+                  //                   ),
+                  //
+                  //                 )
+                  //
+                  //             ),
+                  //           ),
+                  //
+                  //         ]
+                  //     );
+                  //   },
+                  //
+                  //   itemCount:  widget.mAcademy.images.length,
+                  //   itemWidth: MediaQuery
+                  //       .of(context)
+                  //       .size
+                  //       .width * 93 / 100,
+                  // ),
                 ),
               ),
 
@@ -246,32 +376,34 @@ return  map;
                     textAlign: TextAlign.center,
                   ),
                   Expanded(child: SizedBox()),
-                  Padding(
-                    padding: EdgeInsets.only(left: 16),
-                    child:Container(
-                      width: 59.0,
-                      height: 33.0,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(9.0),
-                        color: const Color(0xFFF2C046),
-                      ),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            '4.5',
-                            style: GoogleFonts.cairo(
-                              fontSize: 14.0,
-                              color: Colors.black,
-                            ),
-                          ),
-                          SizedBox(width: 3,),
-                          Icon(Icons.star,color: Colors.black,size: 12,)
-                        ],
-                      ),
-                    ),
+                  GestureDetector(
+                    onTap: (){
+                      _service.call(widget.mAcademy.phone.toString());
+                    },
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 16),
+                      child:Container(
+                        width: 59.0,
+                        height: 33.0,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(9.0),
+                          color: const Color(0xFFF2C046),
+                        ),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                           Icon(Icons.phone,
+                             color: Color(0xFF000000),
+    ),
 
+                            SizedBox(width: 3,),
+                           
+                          ],
+                        ),
+                      ),
+
+                    ),
                   )
                 ],
               ),
@@ -291,29 +423,32 @@ return  map;
                     textAlign: TextAlign.center,
                   ),
                   SizedBox(width: 15,),
-                  Column(
-                    children: [
-                      Text(
-                        '${widget.mAcademy.price}',
-                        style: GoogleFonts.cairo(
-                          fontSize: 24.0,
-                          color: const Color(0xFF717171),
-                          letterSpacing: -0.48,
-                          fontWeight: FontWeight.w700,
+                  Opacity(
+                    opacity: 0,
+                    child: Column(
+                      children: [
+                        Text(
+                          '${widget.mAcademy.price}',
+                          style: GoogleFonts.cairo(
+                            fontSize: 24.0,
+                            color: const Color(0xFF717171),
+                            letterSpacing: -0.48,
+                            fontWeight: FontWeight.w700,
+                          ),
+                          textAlign: TextAlign.center,
                         ),
-                        textAlign: TextAlign.center,
-                      ),
-                      Text(
-                        'مساهم',
-                        style: GoogleFonts.cairo(
-                          fontSize: 14.0,
-                          color: const Color(0xFF717171),
-                          letterSpacing: -0.48,
-                          fontWeight: FontWeight.normal,
+                        Text(
+                          'مساهم',
+                          style: GoogleFonts.cairo(
+                            fontSize: 14.0,
+                            color: const Color(0xFF717171),
+                            letterSpacing: -0.48,
+                            fontWeight: FontWeight.normal,
+                          ),
+                          textAlign: TextAlign.center,
                         ),
-                        textAlign: TextAlign.center,
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                   Column(
                     children: [
@@ -328,7 +463,7 @@ return  map;
                         textAlign: TextAlign.center,
                       ),
                       Text(
-                        'غير مساهم',
+                        'رسوم الإشتراك',
                         style: GoogleFonts.cairo(
                           fontSize: 14.0,
                           color: const Color(0xFF717171),
@@ -434,15 +569,22 @@ return  map;
                   SizedBox(width: 12,),
                   Icon(Icons.location_on,color: Colors.black,size: 18,),
                   SizedBox(width: 10,),
-                  Text(
-                    'محافظة ${widget.mAcademy.city.name}، ${widget.mAcademy.address}',
-                    style: GoogleFonts.cairo(
-                      fontSize: 18.0,
-                      color: Colors.black,
-                      letterSpacing: -0.32,
-                      fontWeight: FontWeight.w600,
+
+                  GestureDetector(
+                    onTap: (){
+                      launchURL(widget.mAcademy.lat.toString(),widget.mAcademy.lng.toString());
+
+                    },
+                    child: Text(
+                      'منطقة ${widget.mAcademy.city.name}، ${widget.mAcademy.address}',
+                      style: GoogleFonts.cairo(
+                        fontSize: 18.0,
+                        color: Colors.black,
+                        letterSpacing: -0.32,
+                        fontWeight: FontWeight.w600,
+                      ),
+                      textAlign: TextAlign.center,
                     ),
-                    textAlign: TextAlign.center,
                   )
                 ],
               ),
@@ -512,16 +654,21 @@ return  map;
               ),
               Padding(padding: EdgeInsets.symmetric(horizontal: 16),
                 child:  Container(
-                  child:  Html(
-                    // customTextAlign: (_) => TextAlign.right,
-                    // defaultTextStyle: GoogleFonts.cairo(
-                    //   fontSize: 13.0,
-                    //   color: const Color(0xFF002087),
-                    //   letterSpacing: -0.26,
-                    //   fontWeight: FontWeight.w700,
-                    // ),
-                    data: '${widget.mAcademy.content}',
+                  child:
+                  HtmlWidget(
+
+
+                    "${widget.mAcademy.content}",
+                    textStyle: TextStyle(
+                        color: Color(0xFF000000),
+                        fontWeight: FontWeight.w500,
+                        fontSize: screenUtil.setSp(
+                            12)
+
+                    ),
                   ),
+
+
                 ),
               ),
 
@@ -530,4 +677,22 @@ return  map;
 
     );
   }
+launchURL(String lat,String lng) async {
+
+
+
+   final String googleMapslocationUrl = "https://www.google.com/maps/search/?api=1&query=${lat},${lng}";
+
+
+
+  final String encodedURl = Uri.encodeFull(googleMapslocationUrl);
+
+  if (await canLaunch(encodedURl)) {
+    await launch(encodedURl);
+  } else {
+    print('Could not launch $encodedURl');
+    throw 'Could not launch $encodedURl';
+  }
+}
+
 }

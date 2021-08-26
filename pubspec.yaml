@@ -15,7 +15,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 1.0.0+1
+version: 1.0.6+7
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -38,7 +38,7 @@ dependencies:
   select_form_field: ^2.0.0
   autocomplete_textfield: ^1.7.3
   url_launcher: ^6.0.6
-  flutter_html: ^2.1.0
+  flutter_html: ^2.0.0
 
   flutter_swiper: ^1.1.6
   blurrycontainer: ^0.0.1
@@ -52,6 +52,7 @@ dependencies:
   in_app_review: ^2.0.2
   infinite_scroll_pagination: ^3.0.1+1
   flutter_dropdown: ^0.0.8
+
   photo_view: ^0.11.1
   firebase_messaging: ^10.0.1
   firebase_core: ^1.2.1
@@ -59,9 +60,10 @@ dependencies:
   youtube_player_flutter: ^8.0.0
   webview_flutter: ^2.0.8
   flutter_inappwebview: ^5.3.2
-  flutter_local_notifications: ^6.0.0
+  flutter_local_notifications: ^5.0.0+4
   group_radio_button: ^1.1.0
   flutter_switch: ^0.3.1
+  get_it: ^7.1.3
 
 
 
@@ -74,6 +76,22 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.9.0
+  flutter_launcher_name:
+    git:
+      url: https://github.com/ride4sun/flutter_launcher_name
+      ref: "0.9.1"
+
+
+
+flutter_launcher_name:
+  name: "Captain23"
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "images/logo_icon.png"
+
 
 
 # For information on the generic Dart part of this file, see the

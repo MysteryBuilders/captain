@@ -142,6 +142,8 @@ class CaptinService {
 
     }
     print(main_model.success);
+    SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+    sharedPreferences.setString('main', json.encode(main_model));
     return main_model;
 
 
@@ -434,8 +436,12 @@ class CaptinService {
     SharedPref sharedPref = SharedPref();
     var userJson = await sharedPref.read(kUser);
     var fireBaseToken = await sharedPref.readString(kSaveFireBaseToken);
-    Login_model login_model =  Login_model.fromJson(userJson);
-    var token = login_model.payload.accessToken;
+    SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+    String loginData = sharedPreferences.getString(kUser);
+    final body = json.decode(loginData);
+    Login_model   loginModel = Login_model.fromJson(body);
+
+    var token = loginModel.payload.accessToken;
 
 
 

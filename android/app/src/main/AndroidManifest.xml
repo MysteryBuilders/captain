@@ -12,8 +12,8 @@
 
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:icon="@mipmap/ic_launcher"
-        android:label="captain"
+        android:icon="@mipmap/launcher_icon"
+        android:label="Captain23"
         android:requestLegacyExternalStorage="true">
 
         <!--
@@ -30,7 +30,7 @@
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="Captain23"></activity>
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -87,3 +87,4 @@
     </application>
 
 </manifest>
+

@@ -70,6 +70,7 @@ print(isLogin);
     captinService.mainModel(email).then((value){
       imageBaseUrl = value.payload.pathPrefix;
 
+
       sharedPref.saveString(KBaseImageUrl,imageBaseUrl);
 
       setState(() {
@@ -100,7 +101,13 @@ print(isLogin);
           return
             GestureDetector(
               onTap: (){
-                Navigator.of(context).push(MaterialPageRoute(builder: (context) => WebViewScreen(url:slider[index].img,title: slider[index].content)));
+                String url = slider[index].url.toString();
+                if(url != "null") {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) =>
+                          WebViewScreen(url: slider[index].url,
+                              title: slider[index].content)));
+                }
 
               },
               child: Stack(

@@ -41,8 +41,8 @@ class _LoginState extends State<Login> {
     if(widget._globalKey.currentState.validate()){
       widget._globalKey.currentState.save();
     }
-    String  email =_emailController.text.trim().toLowerCase();
-    String password = _passwordController.text.trim().toLowerCase();
+    String  email =_emailController.text.trim();
+    String password = _passwordController.text.trim();
     if(!Utilities.validateEmail(email) || password.trim().isEmpty){
       modelHud.changeIsLoading(false);
       _scaffoldKey.currentState.showSnackBar(SnackBar(content: Text('من فضلك تحقق من البيانات الخاصة بك')));
@@ -50,6 +50,7 @@ class _LoginState extends State<Login> {
     }else{
 
       response = await captinService.login(email.trim(), password.trim());
+      print(response);
 
       bool success = response['success'];
       modelHud.changeIsLoading(false);
@@ -61,6 +62,7 @@ class _LoginState extends State<Login> {
       await sharedPref.save(kUser, login_model);
       await sharedPref.saveBool(kKeepMeLoggedIn, true);
       await sharedPref.saveString(kUserPassword, password);
+      await sharedPref.saveString("email", email);
       await sharedPref.saveString(kUserName, login_model.payload.user.name);
 if(login_model.payload.user.img == null){
   await sharedPref.saveString(KImage, "");

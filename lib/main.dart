@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:captain/provider/service_locator.dart';
 import 'package:http/http.dart' as http;
 import 'package:captain/helpers/AppLanguage.dart';
 import 'package:captain/pages/Splash.dart';
@@ -61,6 +62,7 @@ final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
 FlutterLocalNotificationsPlugin();
 
 void main() async{
+  setupLocator();
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
 
