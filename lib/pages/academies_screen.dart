@@ -158,6 +158,7 @@ setState(() {
 
                       options: CarouselOptions(
                           autoPlay: true,
+                          autoPlayInterval: Duration(seconds: 3),
 
                           viewportFraction: 1.0,
                           enlargeCenterPage: false,
@@ -543,7 +544,7 @@ setState(() {
                                             padding: EdgeInsets.only(right: 9),
                                             child:
                                             Text(
-                                              ' ${mAcademeiesList[index].price} د.ك',
+                                              ' ${mAcademeiesList[index].priceN} د.ك',
                                               style: GoogleFonts.cairo(
                                                 fontSize: 16.0,
                                                 color: const Color(0xFF717171),

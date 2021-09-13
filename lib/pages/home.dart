@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:captain/api/api_client.dart';
 import 'package:captain/component/AcademyComponent.dart';
 import 'package:captain/component/CoachComponent.dart';
@@ -19,6 +20,7 @@ import 'package:captain/pages/webview_screen.dart';
 import 'package:captain/provider/AcademyProvider.dart';
 import 'package:captain/provider/CoachProvider.dart';
 import 'package:captain/provider/PlaygroundProvider.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
@@ -44,7 +46,7 @@ MainModel mainModel = null;
 CaptinService captinService = CaptinService();
 String imageBaseUrl;
 SharedPref sharedPref = SharedPref();
-
+int _current = 0;
 
 
   void initState() {
@@ -97,6 +99,9 @@ print(isLogin);
     return new Container(
       height: 180,
       child: new Swiper(
+        autoplay: true,
+        duration: 3000,
+
         itemBuilder: (BuildContext context, int index) {
           return
             GestureDetector(
@@ -160,6 +165,8 @@ print(isLogin);
   GlobalKey<ScaffoldState> _drawerKey = GlobalKey();
 
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     return Scaffold(
       key: _drawerKey,
       drawer: Container(
@@ -365,7 +372,7 @@ print(isLogin);
                                     padding: EdgeInsets.only(right: 9),
                                     child:
                                     Text(
-                                      ' ${mainModel.payload.academies[index].price} د.ك',
+                                      ' ${mainModel.payload.academies[index].priceN} د.ك',
                                       style: GoogleFonts.cairo(
                                         fontSize: 16.0,
                                         color: const Color(0xFF717171),
